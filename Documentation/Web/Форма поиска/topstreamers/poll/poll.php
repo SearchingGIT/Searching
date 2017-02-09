@@ -1,0 +1,117 @@
+<?php 
+	//ini_set('display_startup_errors',1);
+	//ini_set('display_errors',1);
+	//error_reporting(-1);
+
+	include $_SERVER['DOCUMENT_ROOT'].'/poll/pData.class.php'; 
+	include $_SERVER['DOCUMENT_ROOT'].'/poll/pDraw.class.php'; 
+	include $_SERVER['DOCUMENT_ROOT'].'/poll/pImage.class.php'; 
+
+	header("Content-Type: text/html; charset=utf-8");
+
+	$data = File("poll.dat");
+	$vote = $_POST['vote'];
+	if ($vote) setcookie("vote", 1,time()+60*60*24);
+	
+
+	if(!$_COOKIE['vote'])
+	{
+		if ($vote) 
+		{
+			$f = fopen("poll.dat","w");
+			fputs($f, "$data[0]");
+
+			for ($i=1;$i<count($data);$i++) 
+			{
+				$votes = split("~", $data[$i]);
+				if ($i==$vote) $votes[0]++;
+				fputs($f,"$votes[0]~$votes[1]");
+			}
+
+		fclose($f);
+		}
+	}
+
+	$resultsC = array();
+	$resultsA = array();
+
+	for ($i=1;$i<count($data);$i++) 
+		{
+			$votes = split("~", $data[$i]); // value-answer
+			//echo "$votes[1]: <b>$votes[0]</b><br>";
+			$resultsC[$i] = $votes[0];
+			$resultsA[$i] = $votes[1];
+		}
+
+	
+
+	$vote = "";
+
+	$MyData = new pData;
+	//$MyData->removeSerie("Hits");
+	//$MyData->removeSerie("Streamers");
+	
+	$MyData->AddPoints(array($resultsC[1],$resultsC[2],$resultsC[3]),"Hits");    
+	$MyData->AddPoints(array("Alex", "Falex", "Kotleta"),"Streamers");    
+	$MyData->setAxisName(0,"Votes");
+	$MyData->setAbscissa("Streamers");
+	
+	/* Create the pChart object */
+	$myPicture = new pImage(1000,400,$MyData,TRUE);
+
+
+	/* Draw the scale and the 1st chart */
+
+	$myPicture->setFontProperties(array("FontName"=>"/var/www/html/csgo/poll/pChart/fonts/verdana.ttf","FontSize"=>10, "R"=>255,"G"=>255,"B"=>255));
+	$myPicture->setGraphArea(60,60,940,260);
+	//$Settings = array("R"=>0, "G"=>0, "B"=>0);
+	//$myPicture->drawFilledRectangle(0,0,1000,400,$Settings);
+	$myPicture->drawFilledRectangle(60,60,940,260,array("R"=>0,"G"=>0,"B"=>0,"Surrounding"=>-200,"Alpha"=>10));
+	$scaleSettings = array("GridR"=>200,"GridG"=>200,"GridB"=>200,"DrawSubTicks"=>TRUE,"CycleBackground"=>TRUE,"Mode"=>SCALE_MODE_START0);
+	$myPicture->drawScale($scaleSettings);	
+	//$myPicture->drawScale(array("DrawSubTicks"=>TRUE));
+	//$myPicture->setShadow(TRUE,array("X"=>1,"Y"=>1,"R"=>0,"G"=>0,"B"=>0,"Alpha"=>10));
+	$myPicture->drawBarChart(array("DisplayValues"=>TRUE,"DisplayColor"=>DISPLAY_AUTO,"Rounded"=>TRUE,"Surrounding"=>60));
+	
+	$myPicture->Render('/var/www/html/csgo/chart.png');
+
+	
+
+	//echo "pChart finished";
+
+?>
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="poll.css">
+</head>
+<body>
+
+<?php if($_COOKIE['vote']) echo
+	'<div class="voted">
+		<div id="text">
+			 Вы уже проголосовали
+		</div>
+	</div>'
+?>
+	 <div class="result">
+		<div id="rText">
+			Результаты:
+		</div>
+	 </div>
+
+	<!--<?php for ($i=1;$i<count($data);$i++) 
+		{
+			$votes = split("~", $data[$i]); // value-answer
+			echo "$votes[1]: <b>$votes[0]</b><br>";
+		} ?> -->
+
+	<center><img src="chart.png"></center>
+
+
+<body>
+
+</html>
+
+
+

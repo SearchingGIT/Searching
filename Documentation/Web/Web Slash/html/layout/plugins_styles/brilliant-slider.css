@@ -1,0 +1,91 @@
+/* The slider Slider styles */
+.block_slider .slider_wrapper{
+	height:295px; width:929px;
+	position:relative;
+}
+
+.slider_cont{
+	display:none;}
+
+
+
+
+/* sB images  */
+.corns,
+.thumbs_prev,
+#sB-Navi a,
+.thumbPrev{
+	background:url(../images/slider/slider.png) no-repeat;}
+/* corns  */
+.corns{
+	width:3px; height:3px;
+	position:absolute;}
+.corns_left_top{
+	left:0; top:0;
+	background-position:0 0;}
+.corns_right_top{
+	right:0; top:0;
+	background-position:-3px 0;}
+.corns_left_bottom{
+	left:0; bottom:0;
+	background-position:0 -3px;}
+.corns_right_bottom{
+	right:0; bottom:0;
+	background-position:-3px -3px;}
+
+ /* sB-Navi */
+#sB-Navi-wrapper{
+	position:absolute; left:0; bottom:-5px; width:100%; height:32px;
+	text-align:center;}
+#sB-Navi{
+	padding:9px 10px; margin:0 auto; display:inline-block; //zoom:1; //display:inline;
+	height:14px;
+	background:#fcfcfc; border-radius:4px 4px 0 0; behavior: url(layout/js/PIE.htc);}
+
+#sB-Navi-help{
+	padding:0 0 0 11px; height:14px; margin:0 0 0 10px;
+	background:url(../images/slider/navi.png) no-repeat 0 0;
+	float:left;}
+#sB-Navi-help  a#sB-Navi-help-Prev{
+	width:7px; height:10px;
+	background:url(../images/slider/slider.png) no-repeat 0 -13px;}
+#sB-Navi-help  a#sB-Navi-help-Next{
+	width:7px; height:10px;
+	background:url(../images/slider/slider.png) no-repeat -16px -13px}
+	
+	
+/* thumbs */
+.thumbPrev{
+	position:absolute; left:-38px; top:-72px; display:none;
+	width:78px; height:46px; padding:3px 4px 8px 4px;
+	background-position:-24px 0;}
+.thumbPrevIn{
+	display:block;width:78px;height:46px;
+	position:relative; overflow:hidden;}
+.thumbPrevIn img{
+	width:200px; height:150px; position:absolute; left:-50px; top:-50px;}
+
+#sB-Navi a.roundThumb{
+	width:8px; height:8px; margin:3px 2px 0 3px;
+	position:relative; display:block; float:left;
+	background-position:-14px -37px;}
+#sB-Navi a.roundThumb.active, #sB-Navi a.roundThumb:hover{
+	background-position:-1px -37px;}
+
+
+/* big image */
+#sBSlider{
+	position:relative;overflow:hidden;
+	width:929px; height:295px;}
+#sBSlider li{
+	overflow:hidden;
+	width:929px; height:295px;
+	position:absolute; left:0; top:0; display:none;}
+#sBSlider li:first-child{
+	display:block;}
+#sBSlider li img{
+	position:absolute; left:0; top:0; display:block;
+/*	min-width:929px; min-height:295px;-*/
+	image-rendering:optimizequality;}
+
+

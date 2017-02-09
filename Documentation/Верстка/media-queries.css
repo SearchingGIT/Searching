@@ -1,0 +1,36 @@
+@media only screen and (max-width:1220px) {
+    .logo{
+    }
+    .search {
+        position: absolute;
+        left: 214px;
+    }
+    .search .search_input {
+    }
+    .search .search_icon {
+    }
+    .user_menu_icon {
+        position: absolute;
+        left: 996px;
+    }
+    .user_icon {
+        position: absolute;
+        left: 814px;
+    }
+    .message_icon {
+        position: absolute;
+        left: 665px;
+    }
+    .new_message {
+        position: absolute;
+        left: 672px;
+    }
+    .notify_icon {
+        position: absolute;
+        left: 530px;
+    }
+    .new_notify {
+        position: absolute;
+        left: 534px;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Romaxa Donations</title>
+		<link href="css/style1.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+	
+	
+        <div id="wrapper">
+		<video autoplay loop muted class="bgvideo" id="bgvideo">
+   <source src="images/golden.webm" type="video/webm"></source>
+  </video>
+		     <div id="header">
+			 <div id="logo">
+			 <a href="index.html"><img src="images/Site1.png" alt="Логотип" /></a>
+			 
+			 </div>
+			 <div id="menu">
+			 <ul>
+              <li><a  href="index.html">Home</li>
+			   <li><a class="current" href="index1.html">About</li>
+			    <li><a href="#">Contact</li>
+				<li class="twitch"><a  href="http://www.twitch.tv/romaxaa" target="_blank">Twitch.tv</li>
+				</a>
+				</ul>
+                </div>
+			 </div>
+			 <div id="content">
+			 <div class="divider"></div>
+			 <h1>This site is made to help russian streamers which need financial help from Romaxa and sometimes Batya, join us, friend!</h1>
+			 <h2>For example</h2>
+		<iframe width="700" height="500" src="https://www.youtube.com/embed/vt96gdFUPwY" frameborder="0" allowfullscreen></iframe>
+			
+			 
+			 <div class="divider"></div>
+			 <div id="footer"</div>
+			 <p>Copyright &copy; 2015 <a href "index.html">Romaxa Ru</a></p>
+			 <h4> If you want to Help project</h4>
+			 <h5> WebMoney:
+			 </h5>
+			 <h6>Z392408423304</h6>
+			 <h7>R344780660510</h7>
+			 
+			 </div>
+			 
+			 
+		
+		</div>
+	</body>
+</html>

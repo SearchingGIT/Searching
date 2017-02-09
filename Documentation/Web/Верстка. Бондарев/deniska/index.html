@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+<div id="header">
+
+
+
+    <div class="header-content">
+        <div id="logo"></div>
+       <div id="midhead">
+           <div id="search_first">
+               <form>
+                 <input id="searchform" type="text" action="#" metod="POST">
+               </form>
+
+
+
+
+           </div>
+       </div>
+        <div id="buttons">
+           <a href="#"> <div class="buttons_service" style="background-image:url(img/navig/Bell.png)">
+                <div class="nl_but"></div>
+            </div></a>
+
+            <a href="#"> <div class="buttons_service" style="background-image:url(img/navig/Openenvelopecopy.png)">
+                <div class="nl_but"></div>
+            </div></a>
+
+
+
+        </div>
+        <div id="profile_your">
+
+            <div id="photo_user" style="background-image: url(img/look.com.ua-129373.jpg)"></div>
+            <div id="user_name"><a href="#">Пользователь</a></div>
+
+
+
+        </div>
+    </div>
+</div>
+
+<div class="sidebar">
+    <div class="dropdown" id="profile">
+        <span class="label">Профиль</span>
+        <button class="dropbtn"></button>
+
+        <div class="dropdown-content">
+            <a href="#">Параметр 1</a>
+            <a href="#">Параметр 2</a>
+            <a href="#">Параметр 3</a>
+        </div>
+    </div>
+<br>
+    <div class="dropdown" id="my">
+        <span class="label" style="width: 100px; left: 52px;">Мои обьявы</span>
+        <button class="dropbtn"></button>
+        <div class="dropdown-content">
+            <a href="#">Параметр 1</a>
+            <a href="#">Параметр 2</a>
+            <a href="#">Параметр 3</a>
+        </div>
+    </div>
+<br>
+    <div class="dropdown" id="archive">
+        <span class="label" style="left: 78px;">Архив</span>
+        <button class="dropbtn"></button>
+        <div class="dropdown-content">
+            <a href="#">Параметр 1</a>
+            <a href="#">Параметр 2</a>
+            <a href="#">Параметр 3</a>
+        </div>
+    </div>
+</div>
+
+<div id="content">
+    <div id="content-header">
+        <span id="category-title">Категории</span>
+        <div id="tabs">
+            <div id="popular">Популярные</div>
+            <div id="last">Последние</div>
+            <div id="new">Новые</div>
+        </div>
+    </div>
+
+    <div id="inner-content">
+        <div id="category">
+            <ul>
+                <li class="category_list"><a href="#">Спорт</li></a>
+                <li class="category_list"><a href="#">Пляж</li></a>
+                <li class="category_list"><a href="#">Вечеринка</li></a>
+                <li class="category_list"><a href="#">Книголюбы</li></a>
+                <li class="category_list"><a href="#">Прогулка</li></a>
+            </ul>
+        </div>
+        <div id="about_events">
+        <div id="form_events">
+            <div id="form_search">
+                <form action="#">
+                    <input id="search_on_form" type="text">
+                </form>
+
+            </div>
+            <div id="sort">
+                Sort by
+
+
+                <script>
+                    var a
+                    a=0;
+
+                    document.getElementById('sort').onclick = function(){
+                        if (!a){
+                            document.getElementById('sort').style.display = 'block';
+
+                        }
+                        else{
+                            document.getElementById('sort').style.display = 'none';
+
+                            a=0;
+
+                        }
+                    }
+
+
+                </script>
+
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+        <div id="item-list">
+            <div class="item">
+                <div class="heading">Бухать</div>
+                <div class="author">Бодык</div>
+            </div>
+
+            <div class="item">
+                <div class="heading">Бухать 2</div>
+                <div class="author">Бодык 2</div>
+            </div>
+
+            <div class="item">
+                <div class="heading">Бухать 3</div>
+                <div class="author">Бодык 3</div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</div>
+
+
+</body>
+</html>

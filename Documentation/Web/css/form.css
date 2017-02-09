@@ -1,0 +1,164 @@
+body {
+
+	background: rgba(0, 0, 0, 1);
+	background-image: url(form_bkg.png);
+	background-position: 50% top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	font-family: "Droid Sans";
+
+}
+
+.article {
+	width: 100%;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+	text-align: center;
+	font-size: 28px;
+	background: rgba(150, 150, 150, 0.3);
+}
+
+.article > #article_text {
+	height: 60px;
+	font-size: 32px;
+	line-height: 60px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#poll_form {
+	margin: 0px;
+	width: 100%;
+	text-align:center;
+	background: rgba(230, 230, 230, 0.3);
+}
+
+.variant {
+	color: rgba(100, 100, 100, 1);
+	margin: 10px auto;
+	width: 30%;
+	box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.5);
+	text-align: left;
+	font-size: 28px;
+	background: rgba(250, 250, 250, 1);
+	transition-duration :0.3s;
+
+}
+
+.variant > #variant_text {
+	font-size: 28px;
+	display: inline-block;
+	transition-duration :0.3s;
+	
+}
+
+.variant:hover {
+	background: rgba(240, 150, 150, 1);
+}
+
+.voted {
+	
+	width: 100%;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+	text-align: center;
+	font-size: 28px;
+	background: rgba(150, 250, 150, 0.8);
+}
+
+.voted > #text {
+	
+	height: 60px;
+	line-height: 60px;
+	display: inline-block;
+	vertical-align: middle;
+
+}
+
+.btn_result {
+	width: 100%;
+	text-align:center;
+	font-size: 28px;
+	transition-duration :0.3s;
+	background: rgba(0,0,0,0.5);
+	box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.5);
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+	margin-top: 10px;
+
+}
+
+.btn_result > #show_result_text {
+
+	height: 60px;
+	line-height: 60px;
+	display: inline-block;
+	vertical-align: middle;
+
+	
+	
+}
+
+input[type=radio   ]:not(old){
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+}
+
+input[type=radio   ]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -2em;
+  line-height  : 1.5em;
+}
+
+input[type="radio"]:not(old)+label > div > span{
+display          : inline-block;
+  width            : 0.875em;
+  height           : 0.875em;
+  margin           : 0.25em 0.5em 0.25em 0.25em;
+  border           : 0.0625em solid rgb(192,192,192);
+  border-radius    : 0.25em;
+  background       : rgb(224,224,224);
+  background-image :         linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  vertical-align   : bottom;
+}
+
+input[type=radio]:not(old):checked + label > div > span{
+  background-image :         linear-gradient(rgb(224,224,224),rgb(240,240,240));
+}
+
+input[type=radio]:not(old):checked + label > div > span > span{
+  display          : block;
+  width            : 0.5em;
+  height           : 0.5em;
+  margin           : 0.15em;
+  border           : 0.0625em solid rgb(115,153,77);
+  border-radius    : 0.125em;
+  background       : rgb(210,40,25);
+  background-image :         linear-gradient(rgb(210,40,25),rgb(180,10,0));
+}
+
+input[type=radio]:not(old):checked + label > div{
+	color: rgba(210, 40, 25, 1);
+}
+
+input[type=submit] {
+
+	background: rgba(210, 40, 25, 1);
+	width: 200px;
+	height: 60px;
+	color: white;
+	cursor:pointer;
+	font-size: 26px;
+	font-family: "Droid Sans";
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+	transition-duration :0.3s;
+	margin: 10px;
+}
+
+input[type=submit]:hover {
+	transform: scale(1.1, 1.1);
+}
+
+
+

@@ -1,0 +1,368 @@
+@import url(reset.css);
+
+/*
+
+DESIGNED BY SANEK DEEPROFL
+*/
+
+/*== MAIN STYLES ==*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; vertical-align: baseline;}
+
+:focus {outline:none;}
+
+table {border-collapse: collapse; border-spacing: 0;}
+
+a img, img {border: 0 none;}
+
+ol, ul {list-style: none;}
+
+p {margin: 8px 0;}
+
+html, body {margin: 0; padding: 0; font: 16px/18px 'Lato'; color: #fff; }
+html {background-color: rgba(243, 251, 253, 0.5);
+}
+a {color: #fff; text-decoration: none; display:inline-block;}
+
+
+body{
+background-size: cover;
+width:950px;
+  margin:auto auto;
+height:100%;
+
+font: 14px/1.5 Arial, Verdana, sans-serif;
+color: #000000;
+text-align: center;
+}
+
+
+
+h1 {
+margin-top:70px;
+margin-bottom:10px;
+font-size: 60px;
+font-weight: bold;
+
+}
+h2 {
+font-size:27px;
+margin-bottom:30px;
+
+
+}
+h3 {
+font-size:35px;
+margin-bottom:25px;
+margin-top:25px;
+color: #000;
+font-weight: bold;
+
+}
+
+
+#wrapper {
+   width: 100%;
+   margin: 0 auto;
+}
+#header {
+overflow: hidden;
+}
+#logo {
+   width: 204px;
+   height: 132px;
+  float: left;
+  margin-left: -2px;
+
+
+}
+.searching {
+color: #fff;
+font-size: 45px;
+font-weight: bold;
+font-family: Brush Script MT;
+font-style: italic;
+transition:all 0.1s ;
+
+}
+.searching :hover {
+transition:all 0.3s ;
+color: grey;
+font-size: 45px;
+font-weight: bold;
+font-family: Brush Script MT;
+font-style: italic;
+
+
+}
+
+.menu {
+      width: 950px;
+	  height: 50px;
+	  background-color: #013846;
+	  margin:auto auto;
+	  
+	 
+	  
+	  
+	  
+}
+
+
+.menu ul  {
+padding-left: 38px;
+padding-top: 13px;
+overflow: hidden;
+text-align:right;
+margin-right:110px;
+margin-top:-10px;
+font-family:verdana;
+}
+
+
+.menu li {
+
+transition:all 0.2s ;
+    display: inline;
+    list-style-type: none;
+    margin-left: 30px;
+	font-size:16px;
+	
+	
+}
+.menu li :hover{
+
+transition:all 0.1s ;
+    display: inline;
+    list-style-type: none;
+   
+	font-size:16px;
+	color:#00BFFF;
+	
+}
+.menu ul li:hover{
+display: inline;
+ list-style-type: none;
+    margin-left: 30px;
+	
+	}
+
+#menu .current, #menu ul li a:hover {
+text-decoration: underline;
+
+}
+#menu .twitch {
+float: right;
+margin-right: 60px;
+
+}
+.divider {
+width: 552px;
+height: 36px;
+background: url(../images/divier.png) no-repeat;
+margin: 8px auto 5px auto;
+
+
+}
+#content {
+
+margin: 0 auto;
+
+
+}
+#content {
+font: 14px/1.5 Arial, Verdana, sans-serif;
+}
+#bred li {
+text-align: center;
+}
+#social {
+width:300px;
+margin: 0 auto;
+}
+
+#social li {
+text-align: center;
+height: 39px;
+padding-left: 60 px;
+}
+#social li:hover{
+text-decoration:underline;
+
+}
+#social li a {
+font-size:18px;
+font-weight:bold;
+}
+#mail {
+color: #FFFFFF;
+}
+#mail {
+margin-top: 40px;
+}
+#footer {
+margin-top:30px;
+
+}
+h4 {
+font-weight: bold;
+font-size: 25px;
+
+}
+h6{
+font-weight: bold;
+font-size: 15px;
+color:#FFFFFF;
+
+}
+h7{
+font-weight: bold;
+font-size: 15px;
+color:#FFFFFF
+}
+.search_menu{
+
+
+
+}
+.search_menu ul{
+transition:all 0.2s ;
+width:100px;
+color:#000;
+margin-top:50px;
+float:left;
+
+}
+.search_menu ul li{
+
+margin-top:7px;
+font-size:16px;
+font-weight:600;
+}
+.search_menu ul li :hover{
+
+margin-top:7px;
+font-size:16px;
+text-decoration:underline;
+
+
+}
+.object {
+width:550px;
+height:250px;
+
+box-shadow: 0 0 4px rgba(0,0,0,0.3);
+
+margin:auto auto;
+margin-top:50px;
+background-color:white;
+	
+}
+.objectava{
+float:left;
+
+
+margin-left:10px;
+margin-top:10px;
+
+
+	
+}
+
+.tags  {
+	font-size:15px;
+	font-weight:bold;
+	float:left;
+	margin:10px 15px;
+}
+.tags a  {
+
+	color:black;
+}
+.date {
+	font-size:13px;
+	margin:20px 20px;
+	float:left;
+}
+.advertisements
+{
+	font-size:14px;
+	
+
+	text-align:left;
+	float:left;
+	padding:10px;
+	color:grey;
+}
+.nameadvertisements{
+	font-size:18px;
+	text-align:center;
+	font-weight:bold;
+	margin-top:-15px;
+	
+	
+}
+.searchadv{
+
+width:180px;
+height:400px;
+box-shadow: 0 0 4px rgba(0,0,0,0.3);
+margin-top:-250px;
+
+
+background-color:white;
+float:right;
+	
+	
+	
+}
+.main_picture {
+	width:140px;
+	height:30px;
+	box-shadow: 0 0 4px rgba(0,0,0,0.3);
+	background-color:white;
+	padding: 70px;
+	margin-top:50px;
+	margin-left:40px;
+	
+	
+}
+.profile_menu a{
+	color:grey;	
+}
+.profile_menu ul{
+	margin-top:40px;
+	margin-left:50px;
+	font-size:15px;
+	
+}
+.profile_menu li{
+	margin-top:5px;
+	
+}
+.profile_menu li a:hover{
+	color:#00BFFF;
+	
+	
+}
+.object_history
+{
+	width:600px;
+height:150px;
+
+box-shadow: 0 0 4px rgba(0,0,0,0.3);
+
+margin:auto auto;
+
+background-color:white;
+	float:right;
+	margin-top:-150px;
+}

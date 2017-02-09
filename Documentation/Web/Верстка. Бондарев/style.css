@@ -1,0 +1,284 @@
+* {
+    transition    : all 0.1s ease-in-out;
+    -o-transition       : all 0.1s ease-in-out;
+    -moz-transition     : all 0.1s ease-in-out;
+    -webkit-transition  : all 0.1s ease-in-out;
+
+    font-family: Arial;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    background: white;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+    height: 70px;
+    width: 100%;
+    color: black;
+}
+
+.header-content {
+    text-align: center;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    line-height: 70px;
+}
+
+#logo {
+    float: left;
+}
+
+#buttons {
+    float: right;
+}
+
+.sidebar {
+    width: 50px;
+    background-color: #4d5b69;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.sidebar:hover {
+    width: 200px;
+}
+
+.sidebar:hover .dropbtn{
+    width: 200px;
+    height: 100px;
+}
+
+.dropdown>span {
+    display: none;
+    bottom: 10px;
+    left: 66px;
+    position: absolute;
+    color: white;
+}
+
+.sidebar:hover .dropdown>span {
+    display: block;
+}
+
+.sidebar:hover .dropbtn {
+    background-position: 50% 30%;
+}
+
+.dropdown-content>a:hover {
+
+}
+
+.dropdown > button{
+    /*background-size: 60%;*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 50px;
+
+
+}
+
+#profile > button{
+    background-image: url("img/home.png");
+    border-bottom: #536372 1px solid
+}
+
+#my > button {
+    background-image: url("img/rocket.png");
+}
+
+#archive > button {
+    background-image: url("img/puzzle.png");
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+}
+
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    color: white;
+    display: none;
+    position: absolute;
+    background-color: #465460;
+    min-width: 160px;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #4d5b69;
+}
+
+/* Change color of dropdown links on hover */
+/*.dropdown-content a:hover {background-color: #4d5b69}*/
+
+/* Show the dropdown menu on hover */
+/*.dropdown:hover .dropdown-content {*/
+    /*display: block;*/
+/*}*/
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin-left: 200px;
+    margin-top: -100px;
+}
+
+.dropbtn:hover {
+    background-color: #444b52;
+
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/*.dropdown:hover .dropbtn {*/
+    /*background-color: #3d4b59;*/
+/*}*/
+
+#drop-content ul #home {
+    background-image: url("img/home.png");
+}
+#drop-content ul #rocket {
+    background-image: url("img/rocket.png");
+}
+#drop-content ul #puzzle {
+    background-image: url("img/puzzle.png");
+}
+#drop-content ul #diamond {
+    background-image: url("img/diamond.png");
+}
+#drop-content ul #plane {
+    background-image: url("img/plane.png");
+}
+
+.hidden {
+    display: none;
+}
+
+#content-header {
+    background-color: #f1f3fa;
+    height: 55px;
+}
+
+#category-title {
+    margin-left: 100px;
+    margin-top: 15px;
+    font-size: 24px;
+    color: #666666;
+    position: absolute;
+}
+
+#category {
+    margin-left: 20px;
+    width: 200px;
+}
+
+#category>ul {
+    list-style-type: none;
+}
+
+#category>ul>li {
+    vertical-align: middle;
+    line-height: 40px;
+    height: 40px;
+    width: 200px;
+    background-color: #f4f7f8;
+    text-transform: uppercase;
+    color: #6c7b88;
+    margin-bottom: 2px;
+    padding-left: 10px;
+}
+
+#category>ul>li:hover {
+    background-color: #009dc7;
+    color: white;
+}
+
+#tabs {
+    margin-left: 280px;
+    display: inline-flex;
+    text-transform: uppercase;
+    margin-top: 15px;
+    height: 40px;
+    font-size: 14px;
+}
+
+#popular {
+    background-color: white;
+    width: 130px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    color: #5b9bd1
+}
+
+#last {
+    background-color: #ccd8e3;
+    width: 130px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    color: white;
+}
+
+#new {
+    background-color: #d5e0ea;
+    width: 130px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    color: white;
+}
+
+#inner-content {
+    display: inline-flex;
+}
+
+#item-list {
+    margin-left: 80px;
+    margin-top: 20px;
+
+}
+
+.item {
+    margin-bottom: 20px;
+    background-image: url("img/snow.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+
+.heading {
+    font-size: 24px;
+    color: #5b9bd1;
+}
+
+.author {
+    color: grey;
+}

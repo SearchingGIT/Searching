@@ -1,0 +1,160 @@
+.content{
+    width:100%;
+    height: 751px;
+    margin-top: 230px;
+    background:url(images/login%20fone.png) no-repeat;
+}
+.fone_login{
+    background-color:hsl(227, 13%, 87%);
+    color: rgb(0, 0, 0);
+}
+
+.login_form{
+    border-radius: 9px;
+    position: fixed;
+    left: 589px;
+    top: 190px;
+    border-style: solid;
+    border-width: 4px 3px 1px 3px;
+    border-color:  #e3e5ed;
+    background-color:  #ffffff;
+    width: 740px;
+    padding-bottom: 40px;
+}
+
+.login_join{
+    
+    display: block;
+    width: 227px;
+/*    padding-left: 334px;*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+    color: #484848;
+    font-size: 2.107em; /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+    transform: scaleX(1.0013); /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+}
+
+.join_info{
+    float: left;
+    clear: left;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 16px;
+    padding-left: 223px;
+    color:  #484848;
+    font-size: 1.125em;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: left;
+    transform: scaleX(1.0013);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+}
+
+.login_mail{
+    outline: none;
+    border-radius: 6px;
+    float: left;
+    margin-left: 171px;
+    margin-top: 18px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #d4d4d4;
+    background-color: #ffffff;
+    text-indent: 0.7em;
+    width: 402px;
+    height: 37px;
+    font-family: 'Open Sans', sans-serif;
+    color:  #a8a8a8;
+    font-size: 1.124em;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: left;
+    transform: scaleX(1.0018);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+}
+
+.form_buttons{
+    outline: none;
+    border-radius: 6px;
+    clear: left;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 13px;
+    border-style: solid;
+    border-width: 2px;
+    border-color:  #d4d4d4;
+    background-color:  #ffffff;
+    text-indent: 0.7em;
+    width: 402px;
+    height: 37px;
+    font-family: 'Open Sans', sans-serif;
+    color:  #a8a8a8;
+    font-size: 1.124em;/* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: left;
+    transform: scaleX(1.0018);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+}
+
+.login_check{
+    float:left;
+    clear: left;
+    margin-left: 289px;
+    margin-top: 27px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:  #a2a2a2;
+    background-color:  #ffffff;
+    width: 14px;
+    height: 14px;
+}
+
+.checkbox_text{
+    float: left;
+    padding-top: 21px;
+    padding-left: 8px;
+    font-family: 'Open Sans', sans-serif;
+    color: #a8a8a8;
+    font-size: 1.093em; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: left;
+    transform: scaleX(1.0265); /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+}
+
+.submit_btn{
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 11px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    clear: left;
+    margin-top: 30px;
+    background-color: #14b9d6;
+    width: 260px;
+    height: 41px;
+    font-family: 'Open Sans', sans-serif;
+    color:  #ffffff;
+    font-size: 1.486em;
+    font-weight: 400;
+    text-align: center;
+    transform: scaleX(1.0109);
+    
+}
+
+.submit_btn:disabled{
+    color: rgba(126, 126, 126, 0.32);
+    background-color: #d9f4f8;
+}
+
+.link_reg{
+    float: left;
+    padding-left: 158px;
+    padding-top:20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #a8a8a8;
+    font-size: 1.125em; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: left;
+    transform: scaleX(1.0013); /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+}

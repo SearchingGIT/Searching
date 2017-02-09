@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Romaxa Donations</title>
+		<link href="css/style.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+	
+	
+        <div id="wrapper">
+		<video autoplay loop muted class="bgvideo" id="bgvideo">
+   <source src="images/golden.webm" type="video/webm"></source>
+  </video>
+		     <div id="header">
+			 <div id="logo">
+			 <a href="index.html"><img src="images/Site1.png" alt="Логотип" /></a>
+			 
+			 </div>
+			 <div id="menu">
+			 <ul>
+              <li><a class="current" href="index.html">Home</li>
+			   <li><a href="index1.html">About</li>
+			    <li><a href="#">Contact</li>
+				<li class="twitch"><a  href="http://www.twitch.tv/romaxaa" target="_blank">Twitch.tv</li>
+				</a>
+				</ul>
+                </div>
+			 </div>
+		
+			
+			 <div id="content">
+		
+			 <h1>We are coming soon..</h1>
+			 <h2>We're sorry! Our website is under construction..</h2>
+			 <div class="divider"></div>
+			 <p>This website is under construction now.
+Website about Romaxa donations to russian streamers 
+with the function of roll who Romaxa will donate.</p>
+			 <h3>If you want to join us.</h3>
+			 <ul id="social">
+			 <li id="vk"><a href="https://vk.com/romaxaatv" target="_blank">Join our VK page</li>
+			 <li id="youtube"><a href="https://www.youtube.com/channel/UCWKSU08LoDOaMluvf90I71A" target="_blank">Join our YouTube</li></a>
+			 </ul><ul id="bred">
+			 <li id="mail">MAIL topstreamers@yandex.ru</li>
+			 
+			 
+			 </ul>
+			 <div class="divider"></div>
+			 <div id="footer"</div>
+			 <p>Copyright &copy; 2015 <a href "index.html">Romaxa Ru</a></p>
+			 <h4> If you want to Help project</h4>
+			 <h5> WebMoney:
+			 </h5>
+			 <h6>Z392408423304</h6>
+			 <h7>R344780660510</h7>
+			 
+			 </div>
+			 
+			 
+		
+		</div>
+	</body>
+</html>
