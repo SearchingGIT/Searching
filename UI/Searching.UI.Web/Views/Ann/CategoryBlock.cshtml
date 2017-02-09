@@ -1,0 +1,7 @@
+﻿
+<div class="right_menu">
+    <ul class="category_list" ng-repeat="category in Categories">
+        <li class="category_item creation"><a ui-sref=".Announcing({categories_id:{{category.Id}}})" class="a_category">{{category.Name}}</a></li>
+    </ul>
+</div>
+<div class="fixed_scroll" ui-view="Ann"></div>

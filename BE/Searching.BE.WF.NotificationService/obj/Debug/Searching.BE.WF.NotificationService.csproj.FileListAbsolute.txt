@@ -134,6 +134,9 @@ C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.
 C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WF.NotificationService\obj\Debug\Searching.BE.WF.NotificationService.ApiService.Activities_GetMessages_BeforeInitializeComponentHelper.cs
 C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WF.NotificationService\obj\Debug\Searching.BE.WF.NotificationService.csproj.XamlGeneratedCodeFileListAbsolute.txt
 C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WF.NotificationService\obj\Debug\Searching.BE.WF.NotificationService.csproj.XamlGeneratedXamlFileListAbsolute.txt
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WF.NotificationService\obj\Debug\Searching.BE.WF.NotificationService.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WF.NotificationService\obj\Debug\Searching.BE.WF.NotificationService.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WF.NotificationService\obj\Debug\AC2C1ABA-CCF6-44D4-8127-588FD4D0A860-DeferredValidationErrors.xml
 C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WF.NotificationService\obj\Debug\Searching.BE.WF.NotificationService.ApiService.Activities_AddAnnouncing_CompiledExpressionRoot.cs
 C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WF.NotificationService\obj\Debug\Searching.BE.WF.NotificationService.ApiService.Activities_AddMessage_CompiledExpressionRoot.cs
 C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WF.NotificationService\obj\Debug\Searching.BE.WF.NotificationService.ApiService.Activities_AddSelectedUser_CompiledExpressionRoot.cs
@@ -162,6 +165,3 @@ C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.
 C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WF.NotificationService\obj\Debug\Searching.BE.WF.NotificationService.ApiService.Activities_GetSubscribers_CompiledExpressionRoot.cs
 C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WF.NotificationService\obj\Debug\Searching.BE.WF.NotificationService.ApiService.Activities_Registration_CompiledExpressionRoot.cs
 C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WF.NotificationService\obj\Debug\Searching.BE.WF.NotificationService.ApiService.Activities_TestFunction_CompiledExpressionRoot.cs
-C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WF.NotificationService\obj\Debug\Searching.BE.WF.NotificationService.dll
-C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WF.NotificationService\obj\Debug\Searching.BE.WF.NotificationService.pdb
-C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WF.NotificationService\obj\Debug\AC2C1ABA-CCF6-44D4-8127-588FD4D0A860-DeferredValidationErrors.xml

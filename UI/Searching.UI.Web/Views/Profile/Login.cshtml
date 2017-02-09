@@ -1,0 +1,14 @@
+﻿<div class="content_login">
+    <form name="LoginForm" ng-submit="submit(LoginForm.$valid)" novalidate class="login_form">
+        <span class="login_join">Вход</span>
+        <span class="join_info">Это бесплатно и всегда доступно</span>
+        <input placeholder="Введите ваш email" class="login_mail" type="email" name="email" required ng-model="email">
+        <p class="help" ng-show="LoginForm.email.$invalid && !LoginForm.email.$pristine">Enter a valid email.</p>
+        <input placeholder="Введите ваш пароль" type="password" class="login_pass" required ng-model="password">
+        <input type="checkbox" class="login_check" value="Запомнить меня">
+        <span class="checkbox_text">Запомнить меня</span>
+        @*<input type="submit" class="submit_btn" value="Войти" ng-disabled="LoginForm.$invalid"/>*@
+        <input class="submit_btn"  type="submit" value="Войти"  ng-disabled="LoginForm.$invalid"/>
+        <a href="" class="link_reg">Создать новую учетную запись ПРЯМО СЕЙЧАС!</a>
+    </form>
+</div>

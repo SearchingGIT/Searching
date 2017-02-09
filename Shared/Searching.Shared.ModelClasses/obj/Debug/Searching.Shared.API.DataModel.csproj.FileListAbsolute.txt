@@ -2,3 +2,4 @@ C:\Repository\projects\Searching\Sourse Code\Searching.Solution\Shared\Searching
 C:\Repository\projects\Searching\Sourse Code\Searching.Solution\Shared\Searching.Shared.ModelClasses\bin\Debug\Searching.Shared.API.DataModel.pdb
 C:\Repository\projects\Searching\Sourse Code\Searching.Solution\Shared\Searching.Shared.ModelClasses\obj\Debug\Searching.Shared.API.DataModel.dll
 C:\Repository\projects\Searching\Sourse Code\Searching.Solution\Shared\Searching.Shared.ModelClasses\obj\Debug\Searching.Shared.API.DataModel.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\Shared\Searching.Shared.ModelClasses\obj\Debug\Searching.Shared.API.DataModel.csprojResolveAssemblyReference.cache
