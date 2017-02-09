@@ -1,4 +1,3 @@
-C:\Repository\projects\Searching\Sourse Code\Searching.Solution\UI\Searching.UI.Web\obj\Debug\Searching.UI.Web.csprojResolveAssemblyReference.cache
 C:\Repository\projects\Searching\Sourse Code\Searching.Solution\UI\Searching.UI.Web\bin\ApplicationInsights.config
 C:\Repository\projects\Searching\Sourse Code\Searching.Solution\UI\Searching.UI.Web\bin\roslyn\csc.exe
 C:\Repository\projects\Searching\Sourse Code\Searching.Solution\UI\Searching.UI.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
