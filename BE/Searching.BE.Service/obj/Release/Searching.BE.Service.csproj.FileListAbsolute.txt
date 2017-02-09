@@ -1,0 +1,10 @@
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\BE\Searching.BE.Service\bin\Searching.BE.Service.dll.config
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\BE\Searching.BE.Service\bin\Searching.BE.Service.dll
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\BE\Searching.BE.Service\bin\Searching.BE.Service.pdb
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\BE\Searching.BE.Service\bin\Searching.DAL.Main.dll
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\BE\Searching.BE.Service\bin\Searching.Shared.ModelClasses.dll
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\BE\Searching.BE.Service\bin\Searching.DAL.Main.pdb
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\BE\Searching.BE.Service\bin\Searching.Shared.ModelClasses.pdb
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\BE\Searching.BE.Service\obj\Release\Searching.BE.Service.csprojResolveAssemblyReference.cache
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\BE\Searching.BE.Service\obj\Release\Searching.BE.Service.dll
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\BE\Searching.BE.Service\obj\Release\Searching.BE.Service.pdb

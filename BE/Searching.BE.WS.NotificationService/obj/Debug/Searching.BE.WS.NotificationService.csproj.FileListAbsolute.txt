@@ -1,0 +1,16 @@
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WS.NotificationService\bin\Debug\ApplicationInsights.config
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WS.NotificationService\bin\Debug\Searching.BE.WS.NotificationService.exe.config
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WS.NotificationService\bin\Debug\Searching.BE.WS.NotificationService.exe
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WS.NotificationService\bin\Debug\Searching.BE.WS.NotificationService.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WS.NotificationService\bin\Debug\Searching.BE.WF.NotificationService.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WS.NotificationService\bin\Debug\Searching.DAL.Main.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WS.NotificationService\bin\Debug\Searching.Shared.API.DataModel.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WS.NotificationService\bin\Debug\Searching.BE.WF.NotificationService.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WS.NotificationService\bin\Debug\Searching.DAL.Main.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WS.NotificationService\bin\Debug\Searching.Shared.API.DataModel.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WS.NotificationService\obj\Debug\Searching.BE.WS.NotificationService.csprojResolveAssemblyReference.cache
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WS.NotificationService\obj\Debug\Searching.BE.WS.NotificationService.ProjectInstaller.resources
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WS.NotificationService\obj\Debug\Searching.BE.WS.NotificationService.Service1.resources
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WS.NotificationService\obj\Debug\Searching.BE.WS.NotificationService.csproj.GenerateResource.Cache
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WS.NotificationService\obj\Debug\Searching.BE.WS.NotificationService.exe
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\BE\Searching.BE.WS.NotificationService\obj\Debug\Searching.BE.WS.NotificationService.pdb

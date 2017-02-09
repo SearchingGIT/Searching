@@ -1,0 +1,71 @@
+<Activity mc:Ignorable="sap2010 sads" x:Class="Searching.BE.WF.NotificationService.ApiService.Activities.DeleteSelectedAnnouncing" this:DeleteSelectedAnnouncing.EndpointConfigurationName="NetHttpBinding_IWCFRESTService"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+ xmlns:p="Searching.BE.Service"
+ xmlns:p1="http://schemas.microsoft.com/netfx/2009/xaml/servicemodel"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:sbwna="clr-namespace:Searching.BE.WF.NotificationService.ApiService;assembly=Searching.BE.WF.NotificationService"
+ xmlns:sbwna1="clr-namespace:Searching.BE.WF.NotificationService.ApiService;assembly=Searching.BE.WF.NotificationService, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+ xmlns:sc="clr-namespace:System.ComponentModel;assembly=System"
+ xmlns:srs="clr-namespace:System.Runtime.Serialization;assembly=System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+ xmlns:this="clr-namespace:Searching.BE.WF.NotificationService.ApiService.Activities"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="EndpointConfigurationName" Type="x:String">
+      <x:Property.Attributes>
+        <sc:DefaultValueAttribute>
+          <x:Arguments>
+            <x:String>NetHttpBinding_IWCFRESTService</x:String>
+          </x:Arguments>
+        </sc:DefaultValueAttribute>
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="ann" Type="InArgument(sbwna:Selected_Announcing)">
+      <x:Property.Attributes>
+        <RequiredArgumentAttribute />
+      </x:Property.Attributes>
+    </x:Property>
+  </x:Members>
+  <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
+  <Sequence>
+    <Sequence.Variables>
+      <x:Reference>__ReferenceID1</x:Reference>
+      <x:Reference>__ReferenceID2</x:Reference>
+    </Sequence.Variables>
+    <p1:Send x:Name="__ReferenceID0" Action="Searching.BE.Service/IWCFRESTService/DeleteSelectedAnnouncing" OperationName="DeleteSelectedAnnouncing" ServiceContractName="p:IWCFRESTService">
+      <p1:Send.CorrelationInitializers>
+        <p1:RequestReplyCorrelationInitializer>
+          <p1:RequestReplyCorrelationInitializer.CorrelationHandle>
+            <InArgument x:TypeArguments="p1:CorrelationHandle">
+              <VariableValue x:TypeArguments="p1:CorrelationHandle">
+                <VariableValue.Variable>
+                  <Variable x:TypeArguments="p1:CorrelationHandle" x:Name="__ReferenceID2" />
+                </VariableValue.Variable>
+              </VariableValue>
+            </InArgument>
+          </p1:RequestReplyCorrelationInitializer.CorrelationHandle>
+        </p1:RequestReplyCorrelationInitializer>
+      </p1:Send.CorrelationInitializers>
+      <p1:SendMessageContent>
+        <InArgument x:TypeArguments="sbwna:DeleteSelectedAnnouncingRequest">[New Searching.BE.WF.NotificationService.ApiService.DeleteSelectedAnnouncingRequest() With { .ann = ann }]</InArgument>
+      </p1:SendMessageContent>
+      <p1:Send.EndpointConfigurationName>
+        <PropertyReference x:TypeArguments="x:String" PropertyName="EndpointConfigurationName" />
+      </p1:Send.EndpointConfigurationName>
+    </p1:Send>
+    <p1:ReceiveReply Request="{x:Reference __ReferenceID0}" Action="Searching.BE.Service/IWCFRESTService/DeleteSelectedAnnouncingResponse">
+      <p1:ReceiveMessageContent>
+        <OutArgument x:TypeArguments="sbwna:DeleteSelectedAnnouncingResponse">
+          <VariableReference x:TypeArguments="sbwna:DeleteSelectedAnnouncingResponse">
+            <VariableReference.Variable>
+              <Variable x:TypeArguments="sbwna:DeleteSelectedAnnouncingResponse" x:Name="__ReferenceID1" Name="tempResult_7866a4aa4eb644c58e6f17a40a42f44c" />
+            </VariableReference.Variable>
+          </VariableReference>
+        </OutArgument>
+      </p1:ReceiveMessageContent>
+    </p1:ReceiveReply>
+    <sads:DebugSymbol.Symbol>d+EBQzpcUmVwb3NpdG9yeVxwcm9qZWN0c1xTZWFyY2hpbmdcU291cnNlIENvZGVcU2VhcmNoaW5nLlNvbHV0aW9uXEJFXFNlYXJjaGluZy5CRS5XRi5Ob3RpZmljYXRpb25TZXJ2aWNlXFNlcnZpY2UgUmVmZXJlbmNlc1xBcGlTZXJ2aWNlXFNlYXJjaGluZy5CRS5XRi5Ob3RpZmljYXRpb25TZXJ2aWNlLkFwaVNlcnZpY2UuSVdDRlJFU1RTZXJ2aWNlLkRlbGV0ZVNlbGVjdGVkQW5ub3VuY2luZy54YW1sBiADRg4CAQElBTkPAgEFOgVEFwIBAjRNNLcBAgEHKg8uHwIBBj0LQR8CAQQ=</sads:DebugSymbol.Symbol>
+  </Sequence>
+</Activity>

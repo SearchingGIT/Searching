@@ -1,0 +1,2 @@
+Searching.BE.WF.NotificationService.ApiService.IWCFRESTService.AddAnnouncing.g.xaml
+XamlStaticHelperNamespace._XamlStaticHelper

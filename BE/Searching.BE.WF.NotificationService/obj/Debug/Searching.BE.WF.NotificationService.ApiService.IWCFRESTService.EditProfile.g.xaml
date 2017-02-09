@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<this:EditProfile this:EndpointConfigurationName="NetHttpBinding_IWCFRESTService" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="Searching.BE.Service" xmlns:p1="http://schemas.microsoft.com/netfx/2009/xaml/servicemodel" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sbwna="clr-namespace:Searching.BE.WF.NotificationService.ApiService;assembly=Searching.BE.WF.NotificationService" xmlns:sbwna1="clr-namespace:Searching.BE.WF.NotificationService.ApiService;assembly=Searching.BE.WF.NotificationService, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:srs="clr-namespace:System.Runtime.Serialization;assembly=System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:this="clr-namespace:Searching.BE.WF.NotificationService.ApiService.Activities;assembly=Searching.BE.WF.NotificationService" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <this:EditProfile.Implementation>
+    <Sequence>
+      <Sequence.Variables>
+        <x:Reference>__ReferenceID1</x:Reference>
+        <x:Reference>__ReferenceID2</x:Reference>
+      </Sequence.Variables>
+      <p1:Send x:Name="__ReferenceID0" Action="Searching.BE.Service/IWCFRESTService/EditProfile" OperationName="EditProfile" ServiceContractName="p:IWCFRESTService">
+        <p1:Send.CorrelationInitializers>
+          <p1:RequestReplyCorrelationInitializer>
+            <p1:RequestReplyCorrelationInitializer.CorrelationHandle>
+              <InArgument x:TypeArguments="p1:CorrelationHandle">
+                <VariableValue x:TypeArguments="p1:CorrelationHandle">
+                  <VariableValue.Variable>
+                    <Variable x:TypeArguments="p1:CorrelationHandle" x:Name="__ReferenceID2" />
+                  </VariableValue.Variable>
+                </VariableValue>
+              </InArgument>
+            </p1:RequestReplyCorrelationInitializer.CorrelationHandle>
+          </p1:RequestReplyCorrelationInitializer>
+        </p1:Send.CorrelationInitializers>
+        <p1:SendMessageContent>
+          <InArgument x:TypeArguments="sbwna:EditProfileRequest">[New Searching.BE.WF.NotificationService.ApiService.EditProfileRequest() With { .user = user }]</InArgument>
+        </p1:SendMessageContent>
+        <p1:Send.EndpointConfigurationName>
+          <PropertyReference x:TypeArguments="x:String" PropertyName="EndpointConfigurationName" />
+        </p1:Send.EndpointConfigurationName>
+      </p1:Send>
+      <p1:ReceiveReply Request="{x:Reference __ReferenceID0}" Action="Searching.BE.Service/IWCFRESTService/EditProfileResponse">
+        <p1:ReceiveMessageContent>
+          <OutArgument x:TypeArguments="sbwna:EditProfileResponse">
+            <VariableReference x:TypeArguments="sbwna:EditProfileResponse">
+              <VariableReference.Variable>
+                <Variable x:TypeArguments="sbwna:EditProfileResponse" x:Name="__ReferenceID1" Name="tempResult_013a39e5fdb34f0ab40cc43897e1e813" />
+              </VariableReference.Variable>
+            </VariableReference>
+          </OutArgument>
+        </p1:ReceiveMessageContent>
+      </p1:ReceiveReply>
+      <Assign>
+        <Assign.To>
+          <OutArgument x:TypeArguments="sbwna:UserList">[EditProfileResult]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="sbwna:UserList">[tempResult_013a39e5fdb34f0ab40cc43897e1e813.EditProfileResult]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <sads:DebugSymbol.Symbol>9xB6LWmEDQTqemtywGBsioPL1AFDOlxSZXBvc2l0b3J5XHByb2plY3RzXFNlYXJjaGluZ1xTb3Vyc2UgQ29kZVxTZWFyY2hpbmcuU29sdXRpb25cQkVcU2VhcmNoaW5nLkJFLldGLk5vdGlmaWNhdGlvblNlcnZpY2VcU2VydmljZSBSZWZlcmVuY2VzXEFwaVNlcnZpY2VcU2VhcmNoaW5nLkJFLldGLk5vdGlmaWNhdGlvblNlcnZpY2UuQXBpU2VydmljZS5JV0NGUkVTVFNlcnZpY2UuRWRpdFByb2ZpbGUueGFtbAkhA08OAgEBJgU6DwIBCjsFRRcCAQdGBU0OAgECNUA1nwECAQwrDy8fAgELPgtCHwIBCUs2S3UCAQVIN0hKAgED</sads:DebugSymbol.Symbol>
+    </Sequence>
+  </this:EditProfile.Implementation>
+</this:EditProfile>

@@ -1,0 +1,80 @@
+<Activity mc:Ignorable="sap2010 sads" x:Class="Searching.BE.WF.NotificationService.ApiService.Activities.AddToSelected" this:AddToSelected.EndpointConfigurationName="NetHttpBinding_IWCFRESTService"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+ xmlns:p="Searching.BE.Service"
+ xmlns:p1="http://schemas.microsoft.com/netfx/2009/xaml/servicemodel"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:sbwna="clr-namespace:Searching.BE.WF.NotificationService.ApiService;assembly=Searching.BE.WF.NotificationService"
+ xmlns:sbwna1="clr-namespace:Searching.BE.WF.NotificationService.ApiService;assembly=Searching.BE.WF.NotificationService, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
+ xmlns:sc="clr-namespace:System.ComponentModel;assembly=System"
+ xmlns:srs="clr-namespace:System.Runtime.Serialization;assembly=System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+ xmlns:this="clr-namespace:Searching.BE.WF.NotificationService.ApiService.Activities"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="EndpointConfigurationName" Type="x:String">
+      <x:Property.Attributes>
+        <sc:DefaultValueAttribute>
+          <x:Arguments>
+            <x:String>NetHttpBinding_IWCFRESTService</x:String>
+          </x:Arguments>
+        </sc:DefaultValueAttribute>
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="ann" Type="InArgument(sbwna:Selected_Announcing)">
+      <x:Property.Attributes>
+        <RequiredArgumentAttribute />
+      </x:Property.Attributes>
+    </x:Property>
+    <x:Property Name="AddToSelectedResult" Type="OutArgument(sbwna:ReturnValue)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
+  <Sequence>
+    <Sequence.Variables>
+      <x:Reference>__ReferenceID1</x:Reference>
+      <x:Reference>__ReferenceID2</x:Reference>
+    </Sequence.Variables>
+    <p1:Send x:Name="__ReferenceID0" Action="Searching.BE.Service/IWCFRESTService/AddToSelected" OperationName="AddToSelected" ServiceContractName="p:IWCFRESTService">
+      <p1:Send.CorrelationInitializers>
+        <p1:RequestReplyCorrelationInitializer>
+          <p1:RequestReplyCorrelationInitializer.CorrelationHandle>
+            <InArgument x:TypeArguments="p1:CorrelationHandle">
+              <VariableValue x:TypeArguments="p1:CorrelationHandle">
+                <VariableValue.Variable>
+                  <Variable x:TypeArguments="p1:CorrelationHandle" x:Name="__ReferenceID2" />
+                </VariableValue.Variable>
+              </VariableValue>
+            </InArgument>
+          </p1:RequestReplyCorrelationInitializer.CorrelationHandle>
+        </p1:RequestReplyCorrelationInitializer>
+      </p1:Send.CorrelationInitializers>
+      <p1:SendMessageContent>
+        <InArgument x:TypeArguments="sbwna:AddToSelectedRequest">[New Searching.BE.WF.NotificationService.ApiService.AddToSelectedRequest() With { .ann = ann }]</InArgument>
+      </p1:SendMessageContent>
+      <p1:Send.EndpointConfigurationName>
+        <PropertyReference x:TypeArguments="x:String" PropertyName="EndpointConfigurationName" />
+      </p1:Send.EndpointConfigurationName>
+    </p1:Send>
+    <p1:ReceiveReply Request="{x:Reference __ReferenceID0}" Action="Searching.BE.Service/IWCFRESTService/AddToSelectedResponse">
+      <p1:ReceiveMessageContent>
+        <OutArgument x:TypeArguments="sbwna:AddToSelectedResponse">
+          <VariableReference x:TypeArguments="sbwna:AddToSelectedResponse">
+            <VariableReference.Variable>
+              <Variable x:TypeArguments="sbwna:AddToSelectedResponse" x:Name="__ReferenceID1" Name="tempResult_711868b11d7848b0adbbbf7a13696471" />
+            </VariableReference.Variable>
+          </VariableReference>
+        </OutArgument>
+      </p1:ReceiveMessageContent>
+    </p1:ReceiveReply>
+    <Assign>
+      <Assign.To>
+        <OutArgument x:TypeArguments="sbwna:ReturnValue">[AddToSelectedResult]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="sbwna:ReturnValue">[tempResult_711868b11d7848b0adbbbf7a13696471.AddToSelectedResult]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <sads:DebugSymbol.Symbol>d9YBQzpcUmVwb3NpdG9yeVxwcm9qZWN0c1xTZWFyY2hpbmdcU291cnNlIENvZGVcU2VhcmNoaW5nLlNvbHV0aW9uXEJFXFNlYXJjaGluZy5CRS5XRi5Ob3RpZmljYXRpb25TZXJ2aWNlXFNlcnZpY2UgUmVmZXJlbmNlc1xBcGlTZXJ2aWNlXFNlYXJjaGluZy5CRS5XRi5Ob3RpZmljYXRpb25TZXJ2aWNlLkFwaVNlcnZpY2UuSVdDRlJFU1RTZXJ2aWNlLkFkZFRvU2VsZWN0ZWQueGFtbAkhA08OAgEBJgU6DwIBCjsFRRcCAQdGBU0OAgECNUI1oQECAQwrDy8fAgELPgtCHwIBCUs5S3oCAQVIOkhPAgED</sads:DebugSymbol.Symbol>
+  </Sequence>
+</Activity>

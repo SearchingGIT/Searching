@@ -1,0 +1,96 @@
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\obj\Debug\Searching.AL.Transport.csprojResolveAssemblyReference.cache
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Transport.dll
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Transport.pdb
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\Newtonsoft.Json.dll
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Storage.dll
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\Searching.Shared.ModelClasses.dll
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\Searching.Shared.ModelClasses.pdb
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Storage.pdb
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\Newtonsoft.Json.xml
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\obj\Debug\Searching.AL.Transport.dll
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\obj\Debug\Searching.AL.Transport.pdb
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Transport.dll.config
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.dll
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.Extensions.dll
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.Primitives.dll
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\System.Data.Linq.dll
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.xml
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.Extensions.xml
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.Primitives.xml
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\System.Data.Linq.xml
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\obj\Debug\Searching.AL.Transport.csproj.App.config
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\obj\Debug\Searching.AL.Transport.csproj.App.config
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\obj\Debug\Searching.AL.Transport.csprojResolveAssemblyReference.cache
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Transport.dll.config
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Transport.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Transport.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\Newtonsoft.Json.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Storage.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\Searching.Shared.ModelClasses.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\System.Data.Linq.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\Searching.Shared.ModelClasses.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Storage.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\Newtonsoft.Json.xml
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.xml
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.Extensions.xml
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.Primitives.xml
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\bin\Debug\System.Data.Linq.xml
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\obj\Debug\Searching.AL.Transport.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Transport\obj\Debug\Searching.AL.Transport.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Transport.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Transport.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Newtonsoft.Json.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Storage.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Searching.Shared.ModelClasses.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.Extensions.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.Primitives.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Data.Linq.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Storage.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Newtonsoft.Json.xml
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Searching.Shared.ModelClasses.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.xml
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.Extensions.xml
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.Primitives.xml
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Data.Linq.xml
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\obj\Debug\Searching.AL.Transport.csprojResolveAssemblyReference.cache
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\obj\Debug\Searching.AL.Transport.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\obj\Debug\Searching.AL.Transport.pdb
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Transport.dll
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Transport.pdb
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Newtonsoft.Json.dll
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Storage.dll
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Searching.Shared.ModelClasses.dll
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.dll
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.Extensions.dll
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.Primitives.dll
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Data.Linq.dll
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Storage.pdb
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Newtonsoft.Json.xml
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Searching.Shared.ModelClasses.pdb
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.xml
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.Extensions.xml
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.Primitives.xml
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Data.Linq.xml
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\obj\Debug\Searching.AL.Transport.csprojResolveAssemblyReference.cache
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\obj\Debug\Searching.AL.Transport.dll
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\obj\Debug\Searching.AL.Transport.pdb
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Transport.dll
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Transport.pdb
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Newtonsoft.Json.dll
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Storage.dll
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Searching.Shared.ModelClasses.dll
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.dll
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.Extensions.dll
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.Primitives.dll
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Data.Linq.dll
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Searching.AL.Storage.pdb
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Newtonsoft.Json.xml
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\Searching.Shared.ModelClasses.pdb
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.xml
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.Extensions.xml
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Net.Http.Primitives.xml
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\bin\Debug\System.Data.Linq.xml
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\obj\Debug\Searching.AL.Transport.csprojResolveAssemblyReference.cache
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\obj\Debug\Searching.AL.Transport.dll
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Transport\obj\Debug\Searching.AL.Transport.pdb

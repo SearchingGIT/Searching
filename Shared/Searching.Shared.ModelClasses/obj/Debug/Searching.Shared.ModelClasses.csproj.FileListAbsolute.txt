@@ -1,0 +1,24 @@
+C:\Cloud\projects\Searching\Searching.Solution\Searching.Solution\Shared\Searching.Shared.ModelClasses\bin\Debug\Searching.Shared.ModelClasses.dll
+C:\Cloud\projects\Searching\Searching.Solution\Searching.Solution\Shared\Searching.Shared.ModelClasses\bin\Debug\Searching.Shared.ModelClasses.pdb
+C:\Cloud\projects\Searching\Searching.Solution\Searching.Solution\Shared\Searching.Shared.ModelClasses\obj\Debug\Searching.Shared.ModelClasses.csprojResolveAssemblyReference.cache
+C:\Cloud\projects\Searching\Searching.Solution\Searching.Solution\Shared\Searching.Shared.ModelClasses\obj\Debug\Searching.Shared.ModelClasses.dll
+C:\Cloud\projects\Searching\Searching.Solution\Searching.Solution\Shared\Searching.Shared.ModelClasses\obj\Debug\Searching.Shared.ModelClasses.pdb
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\Shared\Searching.Shared.ModelClasses\bin\Debug\Searching.Shared.ModelClasses.dll
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\Shared\Searching.Shared.ModelClasses\bin\Debug\Searching.Shared.ModelClasses.pdb
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\Shared\Searching.Shared.ModelClasses\obj\Debug\Searching.Shared.ModelClasses.dll
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\Shared\Searching.Shared.ModelClasses\obj\Debug\Searching.Shared.ModelClasses.pdb
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\Shared\Searching.Shared.ModelClasses\obj\Debug\Searching.Shared.ModelClasses.csprojResolveAssemblyReference.cache
+C:\Cloud\projects\Searching\Sourse Code\Searching.Solution\Shared\Searching.Shared.ModelClasses\bin\Debug\Searching.Shared.ModelClasses.dll
+C:\Cloud\projects\Searching\Sourse Code\Searching.Solution\Shared\Searching.Shared.ModelClasses\bin\Debug\Searching.Shared.ModelClasses.pdb
+C:\Cloud\projects\Searching\Sourse Code\Searching.Solution\Shared\Searching.Shared.ModelClasses\obj\Debug\Searching.Shared.ModelClasses.csprojResolveAssemblyReference.cache
+C:\Cloud\projects\Searching\Sourse Code\Searching.Solution\Shared\Searching.Shared.ModelClasses\obj\Debug\Searching.Shared.ModelClasses.dll
+C:\Cloud\projects\Searching\Sourse Code\Searching.Solution\Shared\Searching.Shared.ModelClasses\obj\Debug\Searching.Shared.ModelClasses.pdb
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\Shared\Searching.Shared.ModelClasses\bin\Debug\Searching.Shared.ModelClasses.dll
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\Shared\Searching.Shared.ModelClasses\bin\Debug\Searching.Shared.ModelClasses.pdb
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\Shared\Searching.Shared.ModelClasses\obj\Debug\Searching.Shared.ModelClasses.dll
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\Shared\Searching.Shared.ModelClasses\obj\Debug\Searching.Shared.ModelClasses.pdb
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\Shared\Searching.Shared.ModelClasses\obj\Debug\Searching.Shared.ModelClasses.csprojResolveAssemblyReference.cache
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\Shared\Searching.Shared.ModelClasses\bin\Debug\Searching.Shared.ModelClasses.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\Shared\Searching.Shared.ModelClasses\bin\Debug\Searching.Shared.ModelClasses.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\Shared\Searching.Shared.ModelClasses\obj\Debug\Searching.Shared.ModelClasses.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\Shared\Searching.Shared.ModelClasses\obj\Debug\Searching.Shared.ModelClasses.pdb

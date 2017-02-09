@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\4\Builds</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>08/24/2015 12:48:59</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>08/24/2015 12:48:59</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/24/2015 12:49:24</publishTime>
+    </File>
+    <File Include="bin/Searching.Service.dll">
+      <publishTime>08/26/2015 11:22:45</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>08/24/2015 12:49:24</publishTime>
+    </File>
+    <File Include="WCFRESTService.svc">
+      <publishTime>08/24/2015 12:34:39</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/26/2015 11:22:45</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

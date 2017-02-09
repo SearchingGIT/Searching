@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/SearchingLibrary" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SearchingLibrary" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.100.101/Api/WCFRESTService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfCities">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Cities" nillable="true" type="tns:Cities" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCities" nillable="true" type="tns:ArrayOfCities" />
+  <xs:complexType name="Cities">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Announcing" nillable="true" type="tns:ArrayOfAnnouncing" />
+      <xs:element minOccurs="0" name="AreasOfCity" nillable="true" type="tns:ArrayOfAreasOfCity" />
+      <xs:element minOccurs="0" name="City_id" type="xs:int" />
+      <xs:element minOccurs="0" name="City_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="tns:Country" />
+      <xs:element minOccurs="0" name="Country_id" type="xs:int" />
+      <xs:element minOccurs="0" name="UserList" nillable="true" type="tns:ArrayOfUserList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Cities" nillable="true" type="tns:Cities" />
+  <xs:complexType name="ArrayOfAnnouncing">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Announcing" nillable="true" type="tns:Announcing" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAnnouncing" nillable="true" type="tns:ArrayOfAnnouncing" />
+  <xs:complexType name="Announcing">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Announcing_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Categories_id" type="xs:int" />
+      <xs:element minOccurs="0" name="City_id" type="xs:int" />
+      <xs:element minOccurs="0" name="Date_Announcing" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Info_Announcing" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name_Announcing" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name_City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone_Announcing" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="UserLastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="User_id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Announcing" nillable="true" type="tns:Announcing" />
+  <xs:complexType name="ArrayOfAreasOfCity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AreasOfCity" nillable="true" type="tns:AreasOfCity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAreasOfCity" nillable="true" type="tns:ArrayOfAreasOfCity" />
+  <xs:complexType name="AreasOfCity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Announcing" nillable="true" type="tns:ArrayOfAnnouncing" />
+      <xs:element minOccurs="0" name="Areas_id" type="xs:int" />
+      <xs:element minOccurs="0" name="Areas_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cities" nillable="true" type="tns:Cities" />
+      <xs:element minOccurs="0" name="City_id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AreasOfCity" nillable="true" type="tns:AreasOfCity" />
+  <xs:complexType name="Country">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cities" nillable="true" type="tns:ArrayOfCities" />
+      <xs:element minOccurs="0" name="Country_id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name_country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserList" nillable="true" type="tns:ArrayOfUserList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Country" nillable="true" type="tns:Country" />
+  <xs:complexType name="ArrayOfUserList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserList" nillable="true" type="tns:UserList" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserList" nillable="true" type="tns:ArrayOfUserList" />
+  <xs:complexType name="UserList">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="City_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Country_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Date_Bearthday" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Gender_user" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Info" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type_login" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="User_id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserList" nillable="true" type="tns:UserList" />
+  <xs:complexType name="ArrayOfCountry">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Country" nillable="true" type="tns:Country" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCountry" nillable="true" type="tns:ArrayOfCountry" />
+  <xs:complexType name="ArrayOfCategories">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Categories" nillable="true" type="tns:Categories" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCategories" nillable="true" type="tns:ArrayOfCategories" />
+  <xs:complexType name="Categories">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Announcing" nillable="true" type="tns:ArrayOfAnnouncing" />
+      <xs:element minOccurs="0" name="Categories_id" type="xs:int" />
+      <xs:element minOccurs="0" name="Info_Category" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name_Category" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Categories" nillable="true" type="tns:Categories" />
+  <xs:complexType name="AnnFilter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Areas_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Category_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="City_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Country_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="DateAnnouncing" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateSort" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Gender_user" nillable="true" type="ser:char" />
+      <xs:element minOccurs="0" name="MaxDateBirthday" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="MinDateBirthday" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Popular" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="nPage" type="xs:int" />
+      <xs:element minOccurs="0" name="sizePage" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AnnFilter" nillable="true" type="tns:AnnFilter" />
+  <xs:complexType name="ReturnValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Session_id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReturnValue" nillable="true" type="tns:ReturnValue" />
+  <xs:complexType name="Selected_Announcing">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Announcing_id" type="xs:int" />
+      <xs:element minOccurs="0" name="User_id" type="xs:int" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Selected_Announcing" nillable="true" type="tns:Selected_Announcing" />
+  <xs:complexType name="Favorite_Announcing">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Announcing_id" type="xs:int" />
+      <xs:element minOccurs="0" name="User_id" type="xs:int" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Favorite_Announcing" nillable="true" type="tns:Favorite_Announcing" />
+  <xs:complexType name="Selected_User">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Selected_user" type="xs:int" />
+      <xs:element minOccurs="0" name="id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Selected_User" nillable="true" type="tns:Selected_User" />
+  <xs:complexType name="Messages">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Announcing_id" type="xs:int" />
+      <xs:element minOccurs="0" name="Date_Message" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Recipient_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Sender_id" type="xs:int" />
+      <xs:element minOccurs="0" name="Session_id" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Status_id" type="xs:int" />
+      <xs:element minOccurs="0" name="Type_id" type="xs:int" />
+      <xs:element minOccurs="0" name="User_id" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Messages" nillable="true" type="tns:Messages" />
+  <xs:complexType name="ArrayOfMessages">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Messages" nillable="true" type="tns:Messages" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMessages" nillable="true" type="tns:ArrayOfMessages" />
+</xs:schema>

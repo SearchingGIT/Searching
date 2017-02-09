@@ -1,0 +1,65 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Searching.UI.WinClient.Views.FollowersView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True"
+    xmlns:cal="http://www.caliburnproject.org"
+    xmlns:caliburn="clr-namespace:Caliburn.Micro;assembly=Caliburn.Micro.Platform"
+    xmlns:Command="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Platform"
+    xmlns:Interactivity="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+    caliburn:Message.Attach="[Event BackKeyPress] = [Action OnBackKeyPress($eventArgs)]">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.Resources>
+            <Style x:Key="DataBoundListBoxCheckBoxStyle" TargetType="telerikPrimitives:ItemCheckBox">
+                <Setter Property="VerticalAlignment" Value="Center"/>
+            </Style>
+            <DataTemplate x:Key="DataBoundListBoxItemTemplate">
+                <Grid Margin="0,0,0,12">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Image Width="99" Height="99" Source="{Binding ImageThumbnailSource}"/>
+                    <StackPanel Margin="12,-14,0,0" Grid.Column="1">
+                        <TextBlock FontSize="{StaticResource PhoneFontSizeExtraLarge}" FontFamily="{StaticResource PhoneFontFamilySemiLight}" Text="{Binding Path=Name_Category}" TextWrapping="Wrap"/>
+                        <!--<TextBlock FontSize="{StaticResource PhoneFontSizeNormal}" Text="{Binding Info_Category}" TextWrapping="Wrap"/>-->
+                    </StackPanel>
+                </Grid>
+            </DataTemplate>
+
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Margin="0,0,0,18" Grid.ColumnSpan="3">
+            <TextBlock x:Name="PageTitle" Text="Подписчики" Style="{StaticResource PhoneTextTitle1Style}" Height="49" VerticalAlignment="Bottom" FontSize="30" HorizontalAlignment="Center" Width="441" Margin="-212,0"/>
+        </StackPanel>
+        <Grid Grid.Row="1" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Grid.RenderTransform>
+            <telerikPrimitives:RadBusyIndicator x:Name="LoadIndicator"  AnimationStyle="AnimationStyle8" Foreground="#FF2D87D3" RenderTransformOrigin="0.496,0.295" Margin="0,0,0,10" Content="Загрузка..." Visibility="Visible"/>
+            <telerikPrimitives:RadDataBoundListBox
+                                ItemsSource="{Binding ListCategories}"                          
+                                SelectedItem="{Binding ReturnCategories,Mode=TwoWay}"
+                    			IsCheckModeEnabled="True"	
+                    			CheckBoxStyle="{StaticResource DataBoundListBoxCheckBoxStyle}"
+                    			ItemTemplate="{StaticResource DataBoundListBoxItemTemplate}"  EmptyContent="" Margin="0,0,7,10"/>
+        </Grid>
+
+    </Grid>
+
+</phone:PhoneApplicationPage>

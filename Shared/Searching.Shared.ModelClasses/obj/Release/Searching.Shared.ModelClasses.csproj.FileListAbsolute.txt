@@ -1,0 +1,5 @@
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\Shared\Searching.Shared.ModelClasses\bin\Release\Searching.Shared.ModelClasses.dll
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\Shared\Searching.Shared.ModelClasses\bin\Release\Searching.Shared.ModelClasses.pdb
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\Shared\Searching.Shared.ModelClasses\obj\Release\Searching.Shared.ModelClasses.csprojResolveAssemblyReference.cache
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\Shared\Searching.Shared.ModelClasses\obj\Release\Searching.Shared.ModelClasses.dll
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\Shared\Searching.Shared.ModelClasses\obj\Release\Searching.Shared.ModelClasses.pdb

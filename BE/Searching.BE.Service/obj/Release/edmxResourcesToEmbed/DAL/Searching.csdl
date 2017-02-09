@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SearchingModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Announcing">
+    <Key>
+      <PropertyRef Name="Announcing_id" />
+    </Key>
+    <Property Name="Announcing_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_Announcing" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Phone_Announcing" Type="Int32" />
+    <Property Name="Date_Announcing" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Info_Announcing" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Country_id" Type="Int32" />
+    <Property Name="Categories_id" Type="Int32" Nullable="false" />
+    <Property Name="User_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Categories" Relationship="Self.FK__Announcin__Categ__21B6055D" FromRole="Announcing" ToRole="Categories" />
+    <NavigationProperty Name="Country" Relationship="Self.FK__Announcin__Count__22AA2996" FromRole="Announcing" ToRole="Country" />
+    <NavigationProperty Name="UserList" Relationship="Self.FK__Announcin__User___239E4DCF" FromRole="Announcing" ToRole="UserList" />
+    <NavigationProperty Name="Favorite_Announcing" Relationship="Self.FK__Favorite___Annou__267ABA7A" FromRole="Announcing" ToRole="Favorite_Announcing" />
+    <NavigationProperty Name="Selected_Announcing" Relationship="Self.FK__Selected___Annou__2A4B4B5E" FromRole="Announcing" ToRole="Selected_Announcing" />
+  </EntityType>
+  <EntityType Name="AreasOfCity">
+    <Key>
+      <PropertyRef Name="Areas_id" />
+    </Key>
+    <Property Name="Areas_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Areas_name" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="City_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Cities" Relationship="Self.FK__AreasOfCi__City___24927208" FromRole="AreasOfCity" ToRole="Cities" />
+  </EntityType>
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="Categories_id" />
+    </Key>
+    <Property Name="Categories_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_Category" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Info_Category" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Announcing" Relationship="Self.FK__Announcin__Categ__21B6055D" FromRole="Categories" ToRole="Announcing" />
+  </EntityType>
+  <EntityType Name="Cities">
+    <Key>
+      <PropertyRef Name="City_id" />
+    </Key>
+    <Property Name="City_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="City_name" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Country_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AreasOfCity" Relationship="Self.FK__AreasOfCi__City___24927208" FromRole="Cities" ToRole="AreasOfCity" />
+    <NavigationProperty Name="Country" Relationship="Self.FK__Cities__Country___25869641" FromRole="Cities" ToRole="Country" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="Country_id" />
+    </Key>
+    <Property Name="Country_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name_country" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Announcing" Relationship="Self.FK__Announcin__Count__22AA2996" FromRole="Country" ToRole="Announcing" />
+    <NavigationProperty Name="Cities" Relationship="Self.FK__Cities__Country___25869641" FromRole="Country" ToRole="Cities" />
+    <NavigationProperty Name="Registration" Relationship="Self.FK__Registrat__Count__29572725" FromRole="Country" ToRole="Registration" />
+  </EntityType>
+  <EntityType Name="Favorite_Announcing">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Announcing_id" Type="Int32" Nullable="false" />
+    <Property Name="User_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Announcing" Relationship="Self.FK__Favorite___Annou__267ABA7A" FromRole="Favorite_Announcing" ToRole="Announcing" />
+    <NavigationProperty Name="UserList" Relationship="Self.FK__Favorite___User___276EDEB3" FromRole="Favorite_Announcing" ToRole="UserList" />
+    <NavigationProperty Name="UserList1" Relationship="Self.FK__Favorite___User___286302EC" FromRole="Favorite_Announcing" ToRole="UserList" />
+  </EntityType>
+  <EntityType Name="Registration">
+    <Key>
+      <PropertyRef Name="User_id" />
+    </Key>
+    <Property Name="User_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Mail" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FIO" Type="String" MaxLength="256" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Phone" Type="Byte" Nullable="false" />
+    <Property Name="Gender_user" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Date_Bearthday" Type="Int32" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Info" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Country_id" Type="Int32" />
+    <Property Name="Type_login" Type="Byte" Nullable="false" />
+    <NavigationProperty Name="Country" Relationship="Self.FK__Registrat__Count__29572725" FromRole="Registration" ToRole="Country" />
+    <NavigationProperty Name="UserList" Relationship="Self.FK__UserList__User_i__2E1BDC42" FromRole="Registration" ToRole="UserList" />
+  </EntityType>
+  <EntityType Name="Selected_Announcing">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Announcing_id" Type="Int32" Nullable="false" />
+    <Property Name="User_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Announcing" Relationship="Self.FK__Selected___Annou__2A4B4B5E" FromRole="Selected_Announcing" ToRole="Announcing" />
+    <NavigationProperty Name="UserList" Relationship="Self.FK__Selected___User___2B3F6F97" FromRole="Selected_Announcing" ToRole="UserList" />
+  </EntityType>
+  <EntityType Name="Selected_User">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="User_id" Type="Int32" Nullable="false" />
+    <Property Name="SelectedUser_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="UserList" Relationship="Self.FK__Selected___Selec__2D27B809" FromRole="Selected_User" ToRole="UserList" />
+    <NavigationProperty Name="UserList1" Relationship="Self.FK__Selected___User___2C3393D0" FromRole="Selected_User" ToRole="UserList" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="UserList">
+    <Key>
+      <PropertyRef Name="User_id" />
+    </Key>
+    <Property Name="User_id" Type="Int32" Nullable="false" />
+    <Property Name="Phone_User" Type="Int32" Nullable="false" />
+    <Property Name="Password_User" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Info_For_User" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Announcing" Relationship="Self.FK__Announcin__User___239E4DCF" FromRole="UserList" ToRole="Announcing" />
+    <NavigationProperty Name="Favorite_Announcing" Relationship="Self.FK__Favorite___User___276EDEB3" FromRole="UserList" ToRole="Favorite_Announcing" />
+    <NavigationProperty Name="Favorite_Announcing1" Relationship="Self.FK__Favorite___User___286302EC" FromRole="UserList" ToRole="Favorite_Announcing" />
+    <NavigationProperty Name="Registration" Relationship="Self.FK__UserList__User_i__2E1BDC42" FromRole="UserList" ToRole="Registration" />
+    <NavigationProperty Name="Selected_Announcing" Relationship="Self.FK__Selected___User___2B3F6F97" FromRole="UserList" ToRole="Selected_Announcing" />
+    <NavigationProperty Name="Selected_User" Relationship="Self.FK__Selected___Selec__2D27B809" FromRole="UserList" ToRole="Selected_User" />
+    <NavigationProperty Name="Selected_User1" Relationship="Self.FK__Selected___User___2C3393D0" FromRole="UserList" ToRole="Selected_User" />
+  </EntityType>
+  <Association Name="FK__Announcin__Categ__21B6055D">
+    <End Role="Categories" Type="Self.Categories" Multiplicity="1" />
+    <End Role="Announcing" Type="Self.Announcing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="Categories_id" />
+      </Principal>
+      <Dependent Role="Announcing">
+        <PropertyRef Name="Categories_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Announcin__Count__22AA2996">
+    <End Role="Country" Type="Self.Country" Multiplicity="0..1" />
+    <End Role="Announcing" Type="Self.Announcing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="Country_id" />
+      </Principal>
+      <Dependent Role="Announcing">
+        <PropertyRef Name="Country_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Announcin__User___239E4DCF">
+    <End Role="UserList" Type="Self.UserList" Multiplicity="1" />
+    <End Role="Announcing" Type="Self.Announcing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserList">
+        <PropertyRef Name="User_id" />
+      </Principal>
+      <Dependent Role="Announcing">
+        <PropertyRef Name="User_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Favorite___Annou__267ABA7A">
+    <End Role="Announcing" Type="Self.Announcing" Multiplicity="1" />
+    <End Role="Favorite_Announcing" Type="Self.Favorite_Announcing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Announcing">
+        <PropertyRef Name="Announcing_id" />
+      </Principal>
+      <Dependent Role="Favorite_Announcing">
+        <PropertyRef Name="Announcing_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Selected___Annou__2A4B4B5E">
+    <End Role="Announcing" Type="Self.Announcing" Multiplicity="1" />
+    <End Role="Selected_Announcing" Type="Self.Selected_Announcing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Announcing">
+        <PropertyRef Name="Announcing_id" />
+      </Principal>
+      <Dependent Role="Selected_Announcing">
+        <PropertyRef Name="Announcing_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__AreasOfCi__City___24927208">
+    <End Role="Cities" Type="Self.Cities" Multiplicity="1" />
+    <End Role="AreasOfCity" Type="Self.AreasOfCity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cities">
+        <PropertyRef Name="City_id" />
+      </Principal>
+      <Dependent Role="AreasOfCity">
+        <PropertyRef Name="City_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cities__Country___25869641">
+    <End Role="Country" Type="Self.Country" Multiplicity="1" />
+    <End Role="Cities" Type="Self.Cities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="Country_id" />
+      </Principal>
+      <Dependent Role="Cities">
+        <PropertyRef Name="Country_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Registrat__Count__29572725">
+    <End Role="Country" Type="Self.Country" Multiplicity="0..1" />
+    <End Role="Registration" Type="Self.Registration" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="Country_id" />
+      </Principal>
+      <Dependent Role="Registration">
+        <PropertyRef Name="Country_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Favorite___User___276EDEB3">
+    <End Role="UserList" Type="Self.UserList" Multiplicity="1" />
+    <End Role="Favorite_Announcing" Type="Self.Favorite_Announcing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserList">
+        <PropertyRef Name="User_id" />
+      </Principal>
+      <Dependent Role="Favorite_Announcing">
+        <PropertyRef Name="User_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Favorite___User___286302EC">
+    <End Role="UserList" Type="Self.UserList" Multiplicity="1" />
+    <End Role="Favorite_Announcing" Type="Self.Favorite_Announcing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserList">
+        <PropertyRef Name="User_id" />
+      </Principal>
+      <Dependent Role="Favorite_Announcing">
+        <PropertyRef Name="User_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserList__User_i__2E1BDC42">
+    <End Role="Registration" Type="Self.Registration" Multiplicity="1" />
+    <End Role="UserList" Type="Self.UserList" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Registration">
+        <PropertyRef Name="User_id" />
+      </Principal>
+      <Dependent Role="UserList">
+        <PropertyRef Name="User_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Selected___User___2B3F6F97">
+    <End Role="UserList" Type="Self.UserList" Multiplicity="1" />
+    <End Role="Selected_Announcing" Type="Self.Selected_Announcing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserList">
+        <PropertyRef Name="User_id" />
+      </Principal>
+      <Dependent Role="Selected_Announcing">
+        <PropertyRef Name="User_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Selected___Selec__2D27B809">
+    <End Role="UserList" Type="Self.UserList" Multiplicity="1" />
+    <End Role="Selected_User" Type="Self.Selected_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserList">
+        <PropertyRef Name="User_id" />
+      </Principal>
+      <Dependent Role="Selected_User">
+        <PropertyRef Name="SelectedUser_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Selected___User___2C3393D0">
+    <End Role="UserList" Type="Self.UserList" Multiplicity="1" />
+    <End Role="Selected_User" Type="Self.Selected_User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserList">
+        <PropertyRef Name="User_id" />
+      </Principal>
+      <Dependent Role="Selected_User">
+        <PropertyRef Name="User_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SearchingEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Announcing" EntityType="Self.Announcing" />
+    <EntitySet Name="AreasOfCity" EntityType="Self.AreasOfCity" />
+    <EntitySet Name="Categories" EntityType="Self.Categories" />
+    <EntitySet Name="Cities" EntityType="Self.Cities" />
+    <EntitySet Name="Country" EntityType="Self.Country" />
+    <EntitySet Name="Favorite_Announcing" EntityType="Self.Favorite_Announcing" />
+    <EntitySet Name="Registration" EntityType="Self.Registration" />
+    <EntitySet Name="Selected_Announcing" EntityType="Self.Selected_Announcing" />
+    <EntitySet Name="Selected_User" EntityType="Self.Selected_User" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="UserList" EntityType="Self.UserList" />
+    <AssociationSet Name="FK__Announcin__Categ__21B6055D" Association="Self.FK__Announcin__Categ__21B6055D">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Announcing" EntitySet="Announcing" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Announcin__Count__22AA2996" Association="Self.FK__Announcin__Count__22AA2996">
+      <End Role="Country" EntitySet="Country" />
+      <End Role="Announcing" EntitySet="Announcing" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Announcin__User___239E4DCF" Association="Self.FK__Announcin__User___239E4DCF">
+      <End Role="UserList" EntitySet="UserList" />
+      <End Role="Announcing" EntitySet="Announcing" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Favorite___Annou__267ABA7A" Association="Self.FK__Favorite___Annou__267ABA7A">
+      <End Role="Announcing" EntitySet="Announcing" />
+      <End Role="Favorite_Announcing" EntitySet="Favorite_Announcing" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Selected___Annou__2A4B4B5E" Association="Self.FK__Selected___Annou__2A4B4B5E">
+      <End Role="Announcing" EntitySet="Announcing" />
+      <End Role="Selected_Announcing" EntitySet="Selected_Announcing" />
+    </AssociationSet>
+    <AssociationSet Name="FK__AreasOfCi__City___24927208" Association="Self.FK__AreasOfCi__City___24927208">
+      <End Role="Cities" EntitySet="Cities" />
+      <End Role="AreasOfCity" EntitySet="AreasOfCity" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cities__Country___25869641" Association="Self.FK__Cities__Country___25869641">
+      <End Role="Country" EntitySet="Country" />
+      <End Role="Cities" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Registrat__Count__29572725" Association="Self.FK__Registrat__Count__29572725">
+      <End Role="Country" EntitySet="Country" />
+      <End Role="Registration" EntitySet="Registration" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Favorite___User___276EDEB3" Association="Self.FK__Favorite___User___276EDEB3">
+      <End Role="UserList" EntitySet="UserList" />
+      <End Role="Favorite_Announcing" EntitySet="Favorite_Announcing" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Favorite___User___286302EC" Association="Self.FK__Favorite___User___286302EC">
+      <End Role="UserList" EntitySet="UserList" />
+      <End Role="Favorite_Announcing" EntitySet="Favorite_Announcing" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserList__User_i__2E1BDC42" Association="Self.FK__UserList__User_i__2E1BDC42">
+      <End Role="Registration" EntitySet="Registration" />
+      <End Role="UserList" EntitySet="UserList" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Selected___User___2B3F6F97" Association="Self.FK__Selected___User___2B3F6F97">
+      <End Role="UserList" EntitySet="UserList" />
+      <End Role="Selected_Announcing" EntitySet="Selected_Announcing" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Selected___Selec__2D27B809" Association="Self.FK__Selected___Selec__2D27B809">
+      <End Role="UserList" EntitySet="UserList" />
+      <End Role="Selected_User" EntitySet="Selected_User" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Selected___User___2C3393D0" Association="Self.FK__Selected___User___2C3393D0">
+      <End Role="UserList" EntitySet="UserList" />
+      <End Role="Selected_User" EntitySet="Selected_User" />
+    </AssociationSet>
+    <EntitySet Name="MSreplication_options" EntityType="SearchingModel.MSreplication_options" />
+    <EntitySet Name="spt_fallback_db" EntityType="SearchingModel.spt_fallback_db" />
+    <EntitySet Name="spt_fallback_dev" EntityType="SearchingModel.spt_fallback_dev" />
+    <EntitySet Name="spt_fallback_usg" EntityType="SearchingModel.spt_fallback_usg" />
+    <EntitySet Name="spt_monitor" EntityType="SearchingModel.spt_monitor" />
+  </EntityContainer>
+  <EntityType Name="MSreplication_options">
+    <Key>
+      <PropertyRef Name="optname" />
+      <PropertyRef Name="value" />
+      <PropertyRef Name="major_version" />
+      <PropertyRef Name="minor_version" />
+      <PropertyRef Name="revision" />
+      <PropertyRef Name="install_failures" />
+    </Key>
+    <Property Name="optname" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="value" Type="Boolean" Nullable="false" />
+    <Property Name="major_version" Type="Int32" Nullable="false" />
+    <Property Name="minor_version" Type="Int32" Nullable="false" />
+    <Property Name="revision" Type="Int32" Nullable="false" />
+    <Property Name="install_failures" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spt_fallback_db">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="dbid" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="version" />
+    </Key>
+    <Property Name="xserver_name" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="xdttm_ins" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="xdttm_last_ins_upd" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="xfallback_dbid" Type="Int16" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="dbid" Type="Int16" Nullable="false" />
+    <Property Name="status" Type="Int16" Nullable="false" />
+    <Property Name="version" Type="Int16" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spt_fallback_dev">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="low" />
+      <PropertyRef Name="high" />
+      <PropertyRef Name="status" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="phyname" />
+    </Key>
+    <Property Name="xserver_name" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="xdttm_ins" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="xdttm_last_ins_upd" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="xfallback_low" Type="Int32" />
+    <Property Name="xfallback_drive" Type="String" MaxLength="2" FixedLength="true" Unicode="false" />
+    <Property Name="low" Type="Int32" Nullable="false" />
+    <Property Name="high" Type="Int32" Nullable="false" />
+    <Property Name="status" Type="Int16" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="phyname" Type="String" Nullable="false" MaxLength="127" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="spt_fallback_usg">
+    <Key>
+      <PropertyRef Name="xserver_name" />
+      <PropertyRef Name="xdttm_ins" />
+      <PropertyRef Name="xdttm_last_ins_upd" />
+      <PropertyRef Name="dbid" />
+      <PropertyRef Name="segmap" />
+      <PropertyRef Name="lstart" />
+      <PropertyRef Name="sizepg" />
+      <PropertyRef Name="vstart" />
+    </Key>
+    <Property Name="xserver_name" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="xdttm_ins" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="xdttm_last_ins_upd" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="xfallback_vstart" Type="Int32" />
+    <Property Name="dbid" Type="Int16" Nullable="false" />
+    <Property Name="segmap" Type="Int32" Nullable="false" />
+    <Property Name="lstart" Type="Int32" Nullable="false" />
+    <Property Name="sizepg" Type="Int32" Nullable="false" />
+    <Property Name="vstart" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="spt_monitor">
+    <Key>
+      <PropertyRef Name="lastrun" />
+      <PropertyRef Name="cpu_busy" />
+      <PropertyRef Name="io_busy" />
+      <PropertyRef Name="idle" />
+      <PropertyRef Name="pack_received" />
+      <PropertyRef Name="pack_sent" />
+      <PropertyRef Name="connections" />
+      <PropertyRef Name="pack_errors" />
+      <PropertyRef Name="total_read" />
+      <PropertyRef Name="total_write" />
+      <PropertyRef Name="total_errors" />
+    </Key>
+    <Property Name="lastrun" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="cpu_busy" Type="Int32" Nullable="false" />
+    <Property Name="io_busy" Type="Int32" Nullable="false" />
+    <Property Name="idle" Type="Int32" Nullable="false" />
+    <Property Name="pack_received" Type="Int32" Nullable="false" />
+    <Property Name="pack_sent" Type="Int32" Nullable="false" />
+    <Property Name="connections" Type="Int32" Nullable="false" />
+    <Property Name="pack_errors" Type="Int32" Nullable="false" />
+    <Property Name="total_read" Type="Int32" Nullable="false" />
+    <Property Name="total_write" Type="Int32" Nullable="false" />
+    <Property Name="total_errors" Type="Int32" Nullable="false" />
+  </EntityType>
+</Schema>

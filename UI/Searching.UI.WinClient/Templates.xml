@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Grid x:Name="CateglistGrid" Margin="0,0,0,10" Grid.RowSpan="2">
+  <Grid.Resources>
+    <Style x:Key="DataBoundListBoxCheckBoxStyle" TargetType="telerikPrimitives:ItemCheckBox">
+      <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+    <DataTemplate x:Key="DataBoundListBoxItemTemplateAnn" x:Name="AnnouncingTemplate">
+      <Grid Margin="0,0,0,12">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="Auto"/>
+          <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image Width="99" Height="99" Source="{Binding ImageThumbnailSource}"/>
+        <StackPanel Margin="12,-14,0,0" Grid.Column="1">
+          <TextBlock x:Name="NameCategories" FontSize="{StaticResource PhoneFontSizeExtraLarge}" FontFamily="{StaticResource PhoneFontFamilySemiLight}" Text="{Binding Name_Announcing}" TextWrapping="Wrap"/>
+          <!--<TextBlock FontSize="{StaticResource PhoneFontSizeNormal}" Text="{Binding Info_Category}" TextWrapping="Wrap"/>-->
+        </StackPanel>
+      </Grid>
+    </DataTemplate>
+  </Grid.Resources>
+</Grid>

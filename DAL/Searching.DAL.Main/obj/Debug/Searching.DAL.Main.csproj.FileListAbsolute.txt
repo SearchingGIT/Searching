@@ -1,0 +1,51 @@
+C:\4\Searching.Solution\ClassLibrary2\bin\Debug\ClassLibrary2.dll
+C:\4\Searching.Solution\ClassLibrary2\bin\Debug\ClassLibrary2.pdb
+C:\4\Searching.Solution\ClassLibrary2\obj\Debug\ClassLibrary2.dll
+C:\4\Searching.Solution\ClassLibrary2\obj\Debug\ClassLibrary2.pdb
+C:\4\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.DAL.Main.dll
+C:\4\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.DAL.Main.pdb
+C:\4\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.dll
+C:\4\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.pdb
+C:\Searching\Searching.KMS\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.DAL.Main.dll
+C:\Searching\Searching.KMS\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.DAL.Main.pdb
+C:\Searching\Searching.KMS\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.csprojResolveAssemblyReference.cache
+C:\Searching\Searching.KMS\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.dll
+C:\Searching\Searching.KMS\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.pdb
+C:\Mail.ru Cloud\projects\Searching\Searching.KMS\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.DAL.Main.dll
+C:\Mail.ru Cloud\projects\Searching\Searching.KMS\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.DAL.Main.pdb
+C:\Mail.ru Cloud\projects\Searching\Searching.KMS\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.csprojResolveAssemblyReference.cache
+C:\Mail.ru Cloud\projects\Searching\Searching.KMS\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.dll
+C:\Mail.ru Cloud\projects\Searching\Searching.KMS\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.pdb
+C:\Cloud\projects\Searching\Searching.Solution\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.DAL.Main.dll
+C:\Cloud\projects\Searching\Searching.Solution\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.DAL.Main.pdb
+C:\Cloud\projects\Searching\Searching.Solution\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.dll
+C:\Cloud\projects\Searching\Searching.Solution\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.pdb
+C:\Cloud\projects\Searching\Searching.Solution\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.csprojResolveAssemblyReference.cache
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.DAL.Main.dll
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.DAL.Main.pdb
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.Shared.ModelClasses.dll
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.Shared.ModelClasses.pdb
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.csprojResolveAssemblyReference.cache
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.dll
+C:\Mail.ru Cloud\projects\Searching\Searching.Solution\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.pdb
+C:\Cloud\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.DAL.Main.dll
+C:\Cloud\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.DAL.Main.pdb
+C:\Cloud\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.Shared.ModelClasses.dll
+C:\Cloud\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.Shared.ModelClasses.pdb
+C:\Cloud\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.csprojResolveAssemblyReference.cache
+C:\Cloud\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.dll
+C:\Cloud\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.pdb
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.DAL.Main.dll
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.DAL.Main.pdb
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.Shared.ModelClasses.dll
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.Shared.ModelClasses.pdb
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.csprojResolveAssemblyReference.cache
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.dll
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.DAL.Main.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.DAL.Main.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.Shared.API.DataModel.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\bin\Debug\Searching.Shared.API.DataModel.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.csprojResolveAssemblyReference.cache
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\DAL\Searching.DAL.Main\obj\Debug\Searching.DAL.Main.pdb

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="Searching.BE.Service" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="Searching.BE.Service" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="Searching.BE.Service/Imports">
+      <xsd:import schemaLocation="http://192.168.100.101/Api/WCFRESTService.svc?xsd=xsd0" namespace="Searching.BE.Service" />
+      <xsd:import schemaLocation="http://192.168.100.101/Api/WCFRESTService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.100.101/Api/WCFRESTService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SearchingLibrary" />
+      <xsd:import schemaLocation="http://192.168.100.101/Api/WCFRESTService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWCFRESTService_GetCityForCountry_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityForCountry" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetCityForCountry_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCityForCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetCountryList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountryList" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetCountryList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountryListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetCategories_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategories" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetCategories_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCategoriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetAnnouncingFilter_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAnnouncingFilter" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetAnnouncingFilter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAnnouncingFilterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetAreasOfCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAreasOfCity" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetAreasOfCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAreasOfCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetFavoriteAnnuncing_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFavoriteAnnuncing" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetFavoriteAnnuncing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFavoriteAnnuncingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetSelectedAnnouncing_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectedAnnouncing" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetSelectedAnnouncing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSelectedAnnouncingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetForeignUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetForeignUser" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetForeignUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetForeignUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetMyUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyUser" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetMyUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_TestFunction_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestFunction" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_TestFunction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestFunctionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_Registration_InputMessage">
+    <wsdl:part name="parameters" element="tns:Registration" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_Registration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_Auth_InputMessage">
+    <wsdl:part name="parameters" element="tns:Auth" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_Auth_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_EditProfile_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditProfile" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_EditProfile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditProfileResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_AddAnnouncing_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddAnnouncing" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_AddAnnouncing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddAnnouncingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_EditAnnouncing_InputMessage">
+    <wsdl:part name="parameters" element="tns:EditAnnouncing" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_EditAnnouncing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EditAnnouncingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_DeleteAnnouncing_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAnnouncing" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_DeleteAnnouncing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAnnouncingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_AddToSelected_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddToSelected" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_AddToSelected_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddToSelectedResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_AddToFavorite_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddToFavorite" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_AddToFavorite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddToFavoriteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_DeleteSelectedAnnouncing_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSelectedAnnouncing" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_DeleteSelectedAnnouncing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSelectedAnnouncingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_DeleteFavoriteAnnouncing_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFavoriteAnnouncing" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_DeleteFavoriteAnnouncing_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFavoriteAnnouncingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_AddSelectedUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddSelectedUser" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_AddSelectedUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddSelectedUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_DeleteSelectedUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSelectedUser" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_DeleteSelectedUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSelectedUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_FollowersList_InputMessage">
+    <wsdl:part name="parameters" element="tns:FollowersList" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_FollowersList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FollowersListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetAnnouncingFull_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAnnouncingFull" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetAnnouncingFull_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAnnouncingFullResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_AddMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddMessage" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_AddMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_CallCallBack_InputMessage">
+    <wsdl:part name="parameters" element="tns:CallCallBack" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_CallCallBack_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CallCallBackResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetSubscribers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubscribers" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetSubscribers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubscribersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetMessages_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessages" />
+  </wsdl:message>
+  <wsdl:message name="IWCFRESTService_GetMessages_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessagesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWCFRESTService">
+    <wsdl:operation name="GetCityForCountry">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/GetCityForCountry" message="tns:IWCFRESTService_GetCityForCountry_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/GetCityForCountryResponse" message="tns:IWCFRESTService_GetCityForCountry_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCountryList">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/GetCountryList" message="tns:IWCFRESTService_GetCountryList_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/GetCountryListResponse" message="tns:IWCFRESTService_GetCountryList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategories">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/GetCategories" message="tns:IWCFRESTService_GetCategories_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/GetCategoriesResponse" message="tns:IWCFRESTService_GetCategories_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAnnouncingFilter">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/GetAnnouncingFilter" message="tns:IWCFRESTService_GetAnnouncingFilter_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/GetAnnouncingFilterResponse" message="tns:IWCFRESTService_GetAnnouncingFilter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAreasOfCity">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/GetAreasOfCity" message="tns:IWCFRESTService_GetAreasOfCity_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/GetAreasOfCityResponse" message="tns:IWCFRESTService_GetAreasOfCity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFavoriteAnnuncing">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/GetFavoriteAnnuncing" message="tns:IWCFRESTService_GetFavoriteAnnuncing_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/GetFavoriteAnnuncingResponse" message="tns:IWCFRESTService_GetFavoriteAnnuncing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSelectedAnnouncing">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/GetSelectedAnnouncing" message="tns:IWCFRESTService_GetSelectedAnnouncing_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/GetSelectedAnnouncingResponse" message="tns:IWCFRESTService_GetSelectedAnnouncing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetForeignUser">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/GetForeignUser" message="tns:IWCFRESTService_GetForeignUser_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/GetForeignUserResponse" message="tns:IWCFRESTService_GetForeignUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyUser">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/GetMyUser" message="tns:IWCFRESTService_GetMyUser_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/GetMyUserResponse" message="tns:IWCFRESTService_GetMyUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TestFunction">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/TestFunction" message="tns:IWCFRESTService_TestFunction_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/TestFunctionResponse" message="tns:IWCFRESTService_TestFunction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Registration">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/Registration" message="tns:IWCFRESTService_Registration_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/RegistrationResponse" message="tns:IWCFRESTService_Registration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Auth">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/Auth" message="tns:IWCFRESTService_Auth_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/AuthResponse" message="tns:IWCFRESTService_Auth_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditProfile">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/EditProfile" message="tns:IWCFRESTService_EditProfile_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/EditProfileResponse" message="tns:IWCFRESTService_EditProfile_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAnnouncing">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/AddAnnouncing" message="tns:IWCFRESTService_AddAnnouncing_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/AddAnnouncingResponse" message="tns:IWCFRESTService_AddAnnouncing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EditAnnouncing">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/EditAnnouncing" message="tns:IWCFRESTService_EditAnnouncing_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/EditAnnouncingResponse" message="tns:IWCFRESTService_EditAnnouncing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAnnouncing">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/DeleteAnnouncing" message="tns:IWCFRESTService_DeleteAnnouncing_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/DeleteAnnouncingResponse" message="tns:IWCFRESTService_DeleteAnnouncing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddToSelected">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/AddToSelected" message="tns:IWCFRESTService_AddToSelected_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/AddToSelectedResponse" message="tns:IWCFRESTService_AddToSelected_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddToFavorite">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/AddToFavorite" message="tns:IWCFRESTService_AddToFavorite_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/AddToFavoriteResponse" message="tns:IWCFRESTService_AddToFavorite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSelectedAnnouncing">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/DeleteSelectedAnnouncing" message="tns:IWCFRESTService_DeleteSelectedAnnouncing_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/DeleteSelectedAnnouncingResponse" message="tns:IWCFRESTService_DeleteSelectedAnnouncing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFavoriteAnnouncing">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/DeleteFavoriteAnnouncing" message="tns:IWCFRESTService_DeleteFavoriteAnnouncing_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/DeleteFavoriteAnnouncingResponse" message="tns:IWCFRESTService_DeleteFavoriteAnnouncing_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddSelectedUser">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/AddSelectedUser" message="tns:IWCFRESTService_AddSelectedUser_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/AddSelectedUserResponse" message="tns:IWCFRESTService_AddSelectedUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSelectedUser">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/DeleteSelectedUser" message="tns:IWCFRESTService_DeleteSelectedUser_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/DeleteSelectedUserResponse" message="tns:IWCFRESTService_DeleteSelectedUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FollowersList">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/FollowersList" message="tns:IWCFRESTService_FollowersList_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/FollowersListResponse" message="tns:IWCFRESTService_FollowersList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAnnouncingFull">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/GetAnnouncingFull" message="tns:IWCFRESTService_GetAnnouncingFull_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/GetAnnouncingFullResponse" message="tns:IWCFRESTService_GetAnnouncingFull_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMessage">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/AddMessage" message="tns:IWCFRESTService_AddMessage_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/AddMessageResponse" message="tns:IWCFRESTService_AddMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CallCallBack">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/CallCallBack" message="tns:IWCFRESTService_CallCallBack_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/CallCallBackResponse" message="tns:IWCFRESTService_CallCallBack_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscribers">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/GetSubscribers" message="tns:IWCFRESTService_GetSubscribers_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/GetSubscribersResponse" message="tns:IWCFRESTService_GetSubscribers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMessages">
+      <wsdl:input wsaw:Action="Searching.BE.Service/IWCFRESTService/GetMessages" message="tns:IWCFRESTService_GetMessages_InputMessage" />
+      <wsdl:output wsaw:Action="Searching.BE.Service/IWCFRESTService/GetMessagesResponse" message="tns:IWCFRESTService_GetMessages_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,14 @@
+﻿<div class="center_menu" infinite-scroll="contents.NextPage()" infinite-scroll-distance="540">
+    <div class="ann" ng-repeat="content in contents.items">
+        <i class="ann_img"></i>
+        <span class="ann_name">{{content.Name}}.</span>
+        <i class="fa fa-caret-down" aria-hidden="true"></i>
+        <i class="fa fa-check" aria-hidden="true"></i>
+        <i class="fa fa-archive" aria-hidden="true"></i>
+        <p class="ann_discription">{{content.Info}}</p>
+        <span class="ann_user_info">{{content.UserName  }}  {{content.UserLastName}}  {{content.JsonDate}}</span>
+    </div>
+
+    <div ng-click="contents.LoadMore()" ng-show='contents.busy'>Загрузить больше</div>
+   
+</div>

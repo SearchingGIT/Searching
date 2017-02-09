@@ -1,0 +1,2 @@
+Searching.BE.WF.NotificationService.ApiService.IWCFRESTService.AddSelectedUser.g.xaml
+XamlStaticHelperNamespace._XamlStaticHelper

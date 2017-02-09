@@ -1,0 +1,23 @@
+﻿    <div class="content">
+        <div class="fixed_scroll" ui-view="ContentContainer">
+            <div class="content_search">
+                <div class="left_menu">
+                    <img class="user_img" src="~/Content/images/%E1%BB%BE%E9%A0%B703.png" alt="">
+                    <span class="user_name">Кинзерский Денис</span>
+                    <span class="user_location">Киев, Украина</span>
+                    <span class="user_location">16 ноября 2000г.</span>
+                    <img src="~/Content/images/basketball.png" alt="">
+                    <img src="~/Content/images/rocket.png" alt="">
+                    <img src="~/Content/images/theater.png" alt="">
+                    <img src="~/Content/images/scholarship.png" alt="">
+                    <img src="~/Content/images/more.png" class="img_more" alt="">
+                    <span class=" user_menu_img_content my_data_img content_user_menu">Мои данные</span>
+                    <span class="user_menu_img_content my_ann_img content_user_menu">Мои Объявления</span>
+                    <span class="user_menu_img_content my_events_img content_user_menu"> События</span>
+                    <span ui-sref="stateLogin" class="user_menu_img_content my_calendar_img content_user_menu">Календарь</span>
+                    <span class="content_user_menu" ng-click="exit()">Выйти</span>
+                </div>
+                <div class="fixed_scroll" ui-view="Category"></div>
+            </div>
+        </div>
+    </div>

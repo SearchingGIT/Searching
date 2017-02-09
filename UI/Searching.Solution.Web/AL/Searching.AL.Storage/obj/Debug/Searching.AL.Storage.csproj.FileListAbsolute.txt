@@ -1,0 +1,52 @@
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Storage\bin\Debug\Searching.AL.Storage.dll
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Storage\bin\Debug\Searching.AL.Storage.pdb
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Storage\obj\Debug\Searching.AL.Storage.dll
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Storage\obj\Debug\Searching.AL.Storage.pdb
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Storage\obj\Debug\Searching.AL.Storage.csprojResolveAssemblyReference.cache
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Storage\bin\Debug\Searching.Shared.ModelClasses.dll
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Storage\bin\Debug\System.Data.Linq.dll
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Storage\bin\Debug\System.IO.IsolatedStorage.dll
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Storage\bin\Debug\Searching.Shared.ModelClasses.pdb
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Storage\bin\Debug\System.Data.Linq.xml
+C:\Mail.ru\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Storage\bin\Debug\System.IO.IsolatedStorage.xml
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Storage\obj\Debug\Searching.AL.Storage.csprojResolveAssemblyReference.cache
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Storage\bin\Debug\Searching.AL.Storage.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Storage\bin\Debug\Searching.AL.Storage.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Storage\bin\Debug\Searching.Shared.ModelClasses.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Storage\bin\Debug\Searching.Shared.ModelClasses.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Storage\bin\Debug\System.Data.Linq.xml
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Storage\bin\Debug\System.IO.IsolatedStorage.xml
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Storage\obj\Debug\Searching.AL.Storage.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution\AL\Searching.AL.Storage\obj\Debug\Searching.AL.Storage.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\Searching.AL.Storage.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\Searching.AL.Storage.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\Searching.Shared.ModelClasses.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\System.Data.Linq.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\System.IO.IsolatedStorage.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\Searching.Shared.ModelClasses.pdb
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\System.Data.Linq.xml
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\System.IO.IsolatedStorage.xml
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\obj\Debug\Searching.AL.Storage.csprojResolveAssemblyReference.cache
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\obj\Debug\Searching.AL.Storage.dll
+C:\Repository\projects\Searching\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\obj\Debug\Searching.AL.Storage.pdb
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\Searching.AL.Storage.dll
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\Searching.AL.Storage.pdb
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\Searching.Shared.ModelClasses.dll
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\System.Data.Linq.dll
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\System.IO.IsolatedStorage.dll
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\Searching.Shared.ModelClasses.pdb
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\System.Data.Linq.xml
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\System.IO.IsolatedStorage.xml
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\obj\Debug\Searching.AL.Storage.csprojResolveAssemblyReference.cache
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\obj\Debug\Searching.AL.Storage.dll
+C:\Repository\projects\Searching — копия\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\obj\Debug\Searching.AL.Storage.pdb
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\Searching.AL.Storage.dll
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\Searching.AL.Storage.pdb
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\Searching.Shared.ModelClasses.dll
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\System.Data.Linq.dll
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\System.IO.IsolatedStorage.dll
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\Searching.Shared.ModelClasses.pdb
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\System.Data.Linq.xml
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\bin\Debug\System.IO.IsolatedStorage.xml
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\obj\Debug\Searching.AL.Storage.dll
+C:\Repository\projects\Searching1\Sourse Code\Searching.Solution.Web\Searching.Solution.Web\AL\Searching.AL.Storage\obj\Debug\Searching.AL.Storage.pdb

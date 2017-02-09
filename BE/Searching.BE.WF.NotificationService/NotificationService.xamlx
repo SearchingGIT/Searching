@@ -1,0 +1,146 @@
+﻿<WorkflowService mc:Ignorable="sads sap sap2010" p:TextExpression.Namespaces="{x:Reference __ReferenceID0}" p:TextExpression.References="{x:Reference __ReferenceID1}" ConfigurationName="NotificationService" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap2010:WorkflowViewState.IdRef="WorkflowService_1" Name="NotificationService"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/servicemodel"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities"
+ xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities"
+ xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:sbwna="clr-namespace:Searching.BE.WF.NotificationService.ApiService;assembly=Searching.BE.WF.NotificationService"
+ xmlns:sbwnaa="clr-namespace:Searching.BE.WF.NotificationService.ApiService.Activities;assembly=Searching.BE.WF.NotificationService"
+ xmlns:sc="clr-namespace:System.ComponentModel;assembly=System"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+ xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib"
+ xmlns:srs="clr-namespace:System.Runtime.Serialization;assembly=System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+ xmlns:w="clr-namespace:WorkflowService2;assembly=Searching.BE.WF.NotificationService"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <p:Sequence DisplayName="Sequential Service" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <p:TextExpression.Namespaces>
+      <sco:Collection x:TypeArguments="x:String" x:Name="__ReferenceID0">
+        <x:String>System</x:String>
+        <x:String>System.Collections.Generic</x:String>
+        <x:String>System.Data</x:String>
+        <x:String>System.Linq</x:String>
+        <x:String>System.Text</x:String>
+        <x:String>Searching.BE.WF.NotificationService.ApiService</x:String>
+      </sco:Collection>
+    </p:TextExpression.Namespaces>
+    <p:TextExpression.References>
+      <sco:Collection x:TypeArguments="p:AssemblyReference" x:Name="__ReferenceID1">
+        <p:AssemblyReference>Microsoft.AI.Agent.Intercept</p:AssemblyReference>
+        <p:AssemblyReference>Microsoft.AI.DependencyCollector</p:AssemblyReference>
+        <p:AssemblyReference>Microsoft.AI.PerfCounterCollector</p:AssemblyReference>
+        <p:AssemblyReference>Microsoft.AI.ServerTelemetryChannel</p:AssemblyReference>
+        <p:AssemblyReference>Microsoft.AI.Web</p:AssemblyReference>
+        <p:AssemblyReference>Microsoft.AI.WindowsServer</p:AssemblyReference>
+        <p:AssemblyReference>Microsoft.ApplicationInsights</p:AssemblyReference>
+        <p:AssemblyReference>Microsoft.CSharp</p:AssemblyReference>
+        <p:AssemblyReference>System</p:AssemblyReference>
+        <p:AssemblyReference>System.IO.Compression</p:AssemblyReference>
+        <p:AssemblyReference>System.IO.Compression.FileSystem</p:AssemblyReference>
+        <p:AssemblyReference>System.IO.Log</p:AssemblyReference>
+        <p:AssemblyReference>System.Web.DynamicData</p:AssemblyReference>
+        <p:AssemblyReference>System.Drawing</p:AssemblyReference>
+        <p:AssemblyReference>System.Web.Entity</p:AssemblyReference>
+        <p:AssemblyReference>System.Web.ApplicationServices</p:AssemblyReference>
+        <p:AssemblyReference>System.Activities</p:AssemblyReference>
+        <p:AssemblyReference>System.Core</p:AssemblyReference>
+        <p:AssemblyReference>System.Data</p:AssemblyReference>
+        <p:AssemblyReference>System.Data.Entity</p:AssemblyReference>
+        <p:AssemblyReference>System.Runtime.Serialization</p:AssemblyReference>
+        <p:AssemblyReference>System.ServiceModel</p:AssemblyReference>
+        <p:AssemblyReference>System.ServiceModel.Activities</p:AssemblyReference>
+        <p:AssemblyReference>System.ServiceModel.Channels</p:AssemblyReference>
+        <p:AssemblyReference>System.Web</p:AssemblyReference>
+        <p:AssemblyReference>System.Xaml</p:AssemblyReference>
+        <p:AssemblyReference>System.Xml</p:AssemblyReference>
+        <p:AssemblyReference>System.Xml.Linq</p:AssemblyReference>
+        <p:AssemblyReference>Searching.DAL.Main</p:AssemblyReference>
+        <p:AssemblyReference>mscorlib</p:AssemblyReference>
+        <p:AssemblyReference>Searching.BE.WF.NotificationService</p:AssemblyReference>
+      </sco:Collection>
+    </p:TextExpression.References>
+    <p:Sequence.Variables>
+      <p:Variable x:TypeArguments="CorrelationHandle" Name="handle" />
+      <p:Variable x:TypeArguments="x:Int32" Name="data" />
+      <p:Variable x:TypeArguments="sbwna:ReturnValue" Name="Result" />
+      <p:Variable x:TypeArguments="scg:List(sbwna:Messages)" Name="msgTest" />
+      <p:Variable x:TypeArguments="x:Int32" Name="quant" />
+    </p:Sequence.Variables>
+    <p:While sap2010:WorkflowViewState.IdRef="While_1">
+      <p:While.Variables>
+        <p:Variable x:TypeArguments="scg:List(sbwna:Messages)" Name="MessagesList" />
+        <p:Variable x:TypeArguments="x:Int32" Name="i" />
+      </p:While.Variables>
+      <p:While.Condition>True</p:While.Condition>
+      <p:Sequence sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <p:Sequence.Variables>
+          <p:Variable x:TypeArguments="x:TimeSpan" Name="Timer">
+            <p:Variable.Default>
+              <mca:CSharpValue x:TypeArguments="x:TimeSpan">new TimeSpan(0,0,5)</mca:CSharpValue>
+            </p:Variable.Default>
+          </p:Variable>
+        </p:Sequence.Variables>
+        <w:GetNewsActivity sap2010:WorkflowViewState.IdRef="GetNewsActivity_1">
+          <w:GetNewsActivity.msgList>
+            <p:OutArgument x:TypeArguments="scg:List(sbwna:Messages)">
+              <mca:CSharpReference x:TypeArguments="scg:List(sbwna:Messages)">MessagesList</mca:CSharpReference>
+            </p:OutArgument>
+          </w:GetNewsActivity.msgList>
+        </w:GetNewsActivity>
+        <p:If sap2010:WorkflowViewState.IdRef="If_1">
+          <p:If.Condition>
+            <p:InArgument x:TypeArguments="x:Boolean">
+              <mca:CSharpValue x:TypeArguments="x:Boolean">MessagesList.Count&gt;0</mca:CSharpValue>
+            </p:InArgument>
+          </p:If.Condition>
+          <p:If.Then>
+            <sbwnaa:CallCallBack sap2010:WorkflowViewState.IdRef="CallCallBack_1" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
+              <sbwnaa:CallCallBack.CallCallBackResult>
+                <p:OutArgument x:TypeArguments="sbwna:ReturnValue">
+                  <mca:CSharpReference x:TypeArguments="sbwna:ReturnValue">Result</mca:CSharpReference>
+                </p:OutArgument>
+              </sbwnaa:CallCallBack.CallCallBackResult>
+              <sbwnaa:CallCallBack.messageCallback>
+                <p:InArgument x:TypeArguments="scg:List(sbwna:Messages)">
+                  <mca:CSharpValue x:TypeArguments="scg:List(sbwna:Messages)">MessagesList</mca:CSharpValue>
+                </p:InArgument>
+              </sbwnaa:CallCallBack.messageCallback>
+            </sbwnaa:CallCallBack>
+          </p:If.Then>
+        </p:If>
+        <p:Delay sap2010:WorkflowViewState.IdRef="Delay_1">
+          <p:InArgument x:TypeArguments="x:TimeSpan">
+            <mca:CSharpValue x:TypeArguments="x:TimeSpan">Timer</mca:CSharpValue>
+          </p:InArgument>
+        </p:Delay>
+      </p:Sequence>
+    </p:While>
+    <sads:DebugSymbol.Symbol>d4ABQzpcUmVwb3NpdG9yeVxwcm9qZWN0c1xTZWFyY2hpbmdcU291cnNlIENvZGVcU2VhcmNoaW5nLlNvbHV0aW9uXEJFXFNlYXJjaGluZy5CRS5XRi5Ob3RpZmljYXRpb25TZXJ2aWNlXE5vdGlmaWNhdGlvblNlcnZpY2UueGFtbHgOEgN5EAEBRwV3DwECTQd2FAEETBpMHgEDUQ9RYgEFVQlbHQE1XAlwEAEYcQl1EwEOWA9YcQE2Xw9fZQEZYw1uIwEicw1zUgEPZhNmaAEsaxNrbQEj</sads:DebugSymbol.Symbol>
+  </p:Sequence>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData Id="GetNewsActivity_1" sap:VirtualizedContainerService.HintSize="464,22" />
+      <sap2010:ViewStateData Id="CallCallBack_1" sap:VirtualizedContainerService.HintSize="200,22" />
+      <sap2010:ViewStateData Id="If_1" sap:VirtualizedContainerService.HintSize="464,213.333333333333" />
+      <sap2010:ViewStateData Id="Delay_1" sap:VirtualizedContainerService.HintSize="464,22" />
+      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="486,461.333333333333">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="While_1" sap:VirtualizedContainerService.HintSize="512.666666666667,624.666666666667" />
+      <sap2010:ViewStateData Id="Sequence_1" sap:VirtualizedContainerService.HintSize="534.666666666667,748.666666666667">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="WorkflowService_1" sap:VirtualizedContainerService.HintSize="564.666666666667,910.666666666667" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+</WorkflowService>

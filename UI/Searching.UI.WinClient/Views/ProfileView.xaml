@@ -1,0 +1,53 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Searching.UI.WinClient.Views.ProfileView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True"
+    xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Primitives">
+
+    <Grid Margin="0,0,0,-104">
+
+        <!--LayoutRoot is the root grid where all page content is placed-->
+        <StackPanel x:Name="AuthPanel" Visibility="Collapsed">
+            <telerikPrimitives:RadTextBox Header="E-Mail:"  x:Name="TakeLogin" HorizontalAlignment="Left" Margin="0,25,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="446"/>
+            <telerikPrimitives:RadPasswordBox x:Name="TakePassword" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="446" Header="Пароль:"/>
+            <Button x:Name="Auth" Content="Войти" HorizontalAlignment="Left" VerticalAlignment="Top" Width="446" FontWeight="Bold" Background="#FF01B3E8" Foreground="White" BorderBrush="{StaticResource PhoneBackgroundBrush}" Height="80"/>
+            <HyperlinkButton Content="Забыли пароль?" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FF0476A0" FontStretch="UltraCondensed"/>
+            <HyperlinkButton x:Name="GoToRegistration" Content="Зарегистрируйтесь" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FF0476A0" FontStretch="UltraCondensed"/>
+
+        </StackPanel>
+
+        <StackPanel x:Name="ProfilePanel" Visibility="Visible">
+
+            <Grid Height="282">
+                <telerikPrimitives:RadMultiResolutionImage HorizontalAlignment="Left" Height="132" VerticalAlignment="Top" Width="125" Margin="37,44,0,0" />
+                <TextBlock Text="{Binding MyName}" HorizontalAlignment="Left"  TextWrapping="Wrap"  VerticalAlignment="Center" Height="50" Width="237" Margin="224,94,0,138" />
+                <TextBlock Text="{Binding MyLastName}" HorizontalAlignment="Left"  TextWrapping="Wrap" VerticalAlignment="Center" Height="50" Width="226" Margin="224,39,0,193" RenderTransformOrigin="0.468,1.368"/>
+                <TextBlock Text="{Binding MyAge}" Width="218" Height="40" HorizontalAlignment="Left" Margin="224,143,0,99" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="0.581,-0.085"/>
+
+            </Grid>
+            <ScrollViewer Width="Auto" VerticalScrollBarVisibility="Visible"  Margin="0,-10,0,-220" Height="683" RenderTransformOrigin="0.5,0.5">
+                <ScrollViewer.Content>
+                    <StackPanel Orientation="Vertical" Height="779">
+                        <Button x:Name="button2"  Content="Мои Объявления"  VerticalAlignment="Top"/>
+                        <Button x:Name="GoToPostAnn" Content="Подать объявления"  VerticalAlignment="Top"/>
+                        <!--<Button x:Name="button4" Content="Редактирования профиля"  VerticalAlignment="Top"/>
+                        <Button x:Name="button5" Content="Выбранные объявления"  VerticalAlignment="Top"/>
+                        <Button x:Name="button6" Content="Мои подписчики"  VerticalAlignment="Top"/>-->
+                        <Button x:Name="Exit" Content="Выход из аккаунта"  VerticalAlignment="Top"/>
+                    </StackPanel>
+                </ScrollViewer.Content>
+            </ScrollViewer>
+
+        </StackPanel>
+    </Grid>
+</phone:PhoneApplicationPage>

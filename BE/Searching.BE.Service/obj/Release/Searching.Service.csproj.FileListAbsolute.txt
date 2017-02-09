@@ -1,0 +1,12 @@
+C:\4\Searching.Solution\Searching.Service\bin\Searching.Service.dll.config
+C:\4\Searching.Solution\Searching.Service\bin\Searching.Service.dll
+C:\4\Searching.Solution\Searching.Service\bin\Searching.Service.pdb
+C:\4\Searching.Solution\Searching.Service\bin\EntityFramework.dll
+C:\4\Searching.Solution\Searching.Service\bin\EntityFramework.SqlServer.dll
+C:\4\Searching.Solution\Searching.Service\bin\Newtonsoft.Json.dll
+C:\4\Searching.Solution\Searching.Service\bin\EntityFramework.xml
+C:\4\Searching.Solution\Searching.Service\bin\EntityFramework.SqlServer.xml
+C:\4\Searching.Solution\Searching.Service\bin\Newtonsoft.Json.xml
+C:\4\Searching.Solution\Searching.Service\obj\Release\Searching.Service.csprojResolveAssemblyReference.cache
+C:\4\Searching.Solution\Searching.Service\obj\Release\Searching.Service.dll
+C:\4\Searching.Solution\Searching.Service\obj\Release\Searching.Service.pdb
